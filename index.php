@@ -18,6 +18,7 @@
            <div class="col-md-6 offer">
                
                <a href="#" class="btn btn-success btn-sm">Welcome</a>
+               
                <a href="checkout.php">CheckOut</a>
                
            </div>
@@ -29,25 +30,32 @@
                <ul class="menu">
                    
                    <li>
-                       <a href="customer_register.php">Register</a>
-                   </li>
-                   <li>
-                       <a href="checkout.php">My Account</a>
-                   </li>
-                   <li>
-                       <a href="cart.php">Go To Cart</a>
-                   </li>
-                   <li>
-                       <a href="checkout.php">Login</a>
-                   </li>
+                       
+                     <a href="customer_register.php">Register</a>
                    
+                    </li>
+                   
+                   <li>
+                   
+                     <a href="checkout.php">My Account</a>
+                   
+                    </li>
+
+                   <li>
+                       
+                       <a href="cart.php">Go To Cart</a>
+
+                   </li>
+
+                   <li>
+
+                       <a href="checkout.php">Login</a>
+
+                   </li>
                </ul>
-               
            </div>
-           <!-- Menu-Content Finish -->
-           
+           <!-- Menu-Content Finish -->  
        </div>
-       
    </div>
    <!-- Menu Finish -->
    
@@ -79,8 +87,7 @@
                    
                    <i class="fa fa-search"></i>
                    
-               </button>
-               
+               </button> 
            </div>
            <!-- Navbar-Header Finish -->
            
@@ -105,10 +112,8 @@
                        </li>
                        <li>
                            <a href="contact.php">Contact Us</a>
-                       </li>
-                       
-                   </ul>
-                   
+                       </li> 
+                   </ul> 
                </div>
                
                <a href="cart.php" class="btn navbar-btn btn-primary right">
@@ -129,8 +134,7 @@
                        
                        <i class="fa fa-search"></i>
                        
-                   </button>
-                   
+                   </button>  
                </div>
                
                <div class="collapse clearfix" id="search">
@@ -147,21 +151,14 @@
                                
                                <i class="fa fa-search"></i>
                                
-                           </button>
-                           
+                           </button>  
                            </span>
-                           
-                       </div>
-                       
+                       </div>   
                    </form>
-                   
-               </div>
-               
+               </div>   
            </div>
            <!-- Navbar-Search Fininsh-->
-           
        </div>
-       
    </div>
    <!-- Navbar Finish -->
    
@@ -176,8 +173,11 @@
                <ol class="carousel-indicators">
                    
                    <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                   
                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                   
                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                   
                    <li data-target="#myCarousel" data-slide-to="3"></li>
                    
                </ol>
@@ -207,7 +207,6 @@
                        <img id="carousel" src="admin_area/slides_images/slide-4.jpg" alt="Slider Image 4">
                        
                    </div>
-                   
                </div>
                
                <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
@@ -220,15 +219,13 @@
                <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- left carousel-control Begin -->
                    
                    <span class="glyphicon glyphicon-chevron-right"></span>
+                   
                    <span class="sr-only">Next</span>
                    
-               </a>
-               
+               </a> 
            </div>
-           <!-- carousel-slide-content Finish -->
-           
+           <!-- carousel-slide-content Finish --> 
        </div>
-       
    </div>
    <!-- carousel-slide Finish -->
    
@@ -238,7 +235,7 @@
        <div class="container">
            
            <div class="same-height-row">
-               
+               <!-- Offers-content Begin -->
                <div class="col-sm-4">
                    
                    <div class="box same-height">
@@ -253,8 +250,7 @@
                        
                        <p>Wherry squiffy man-of-war Spanish Main code of conduct quarter</p>
                        
-                   </div>
-                   
+                   </div> 
                </div>
                
                <div class="col-sm-4">
@@ -272,7 +268,6 @@
                        <p>Pinnace main sheet weigh anchor carouser matey Chain, consectetur adipisicing elit.</p>
                        
                    </div>
-                   
                </div>
                
                <div class="col-sm-4">
@@ -289,16 +284,320 @@
                        
                        <p>Bucko Arr Jack Ketch draft pirate Admiral of the Black parley lugger stern Blimey.</p>
                        
-                   </div>
-                   
-               </div>
-               
+                   </div>                  
+               </div>           
            </div>
-           
+           <!-- Offers-content Finish -->
        </div>
        
    </div>
    <!-- Offers Finish -->
+
+   <!-- New-Products Begin -->
+   <div id="hot">
+       
+       <div class="box">
+           
+           <div class="container">
+               
+               <div class="col-md-12">
+                   
+                   <h2>
+                       Our Latest Products
+                   </h2>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- New-Products-Content Begin -->
+   <div id="content" class="container">
+       
+       <div class="row">
+           
+       <div class="col-sm-4 col-sm-6 single">
+               
+               <div class="product">
+                   
+                   <a href="details.php">
+                       
+                       <img class="img-responsive" src="admin_area/product_images/product-women-5.jpeg" alt="Product 1">
+                       
+                   </a>
+                   
+                   <div class="text">
+                       
+                       <h3>
+                           <a href="details.php">
+                               Woman T-Shirt
+                           </a>
+                       </h3>
+                       
+                       <p class="price">$30</p>
+                       
+                       <p class="button">
+                           
+                           <a href="details.php" class="btn btn-default">View Details</a>
+                           
+                           <a href="details.php" class="btn btn-primary">
+                               
+                               <i class="fa fa-shopping-cart">
+                                   Add To Cart
+                               </i>  
+                           </a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-sm-4 col-sm-6 single">
+               
+               <div class="product">
+                   
+                   <a href="details.php">
+                       
+                       <img class="img-responsive" src="admin_area/product_images/product-men-1.jpeg" alt="Product 1">
+                       
+                   </a>
+                   
+                   <div class="text">
+                       
+                       <h3>
+                           <a href="details.php">
+                               Man T-Shirt
+                           </a>
+                       </h3>
+                       
+                       <p class="price">$30</p>
+                       
+                       <p class="button">
+                           
+                           <a href="details.php" class="btn btn-default">View Details</a>
+                           
+                           <a href="details.php" class="btn btn-primary">
+                               
+                               <i class="fa fa-shopping-cart">
+                                   Add To Cart
+                               </i>
+                           </a>
+                       </p>                      
+                   </div>
+               </div>              
+           </div>
+           
+           <div class="col-sm-4 col-sm-6 single">
+               
+               <div class="product">
+                   
+                   <a href="details.php">
+                       
+                       <img class="img-responsive" src="admin_area/product_images/product-women-2.jpeg" alt="Product 1">
+                       
+                   </a>
+                   
+                   <div class="text">
+                       
+                       <h3>
+                           <a href="details.php">
+                               Woman T-Shirt
+                           </a>
+                       </h3>
+                       
+                       <p class="price">$30</p>
+                       
+                       <p class="button">
+                           
+                           <a href="details.php" class="btn btn-default">View Details</a>
+                           
+                           <a href="details.php" class="btn btn-primary">
+                               
+                               <i class="fa fa-shopping-cart">
+                                   Add To Cart
+                               </i>
+                           </a>
+                       </p>                       
+                   </div>                   
+               </div>               
+           </div>
+           
+           <div class="col-sm-4 col-sm-6 single">
+               
+               <div class="product">
+                   
+                   <a href="details.php">
+                       
+                       <img class="img-responsive" src="admin_area/product_images/product-men-2.jpeg" alt="Product 1">
+                       
+                   </a>
+                   
+                   <div class="text">
+                       
+                       <h3>
+                           <a href="details.php">
+                               Man T-Shirt
+                           </a>
+                       </h3>
+                       
+                       <p class="price">$30</p>
+                       
+                       <p class="button">
+                           
+                           <a href="details.php" class="btn btn-default">View Details</a>
+                           
+                           <a href="details.php" class="btn btn-primary">
+                               
+                               <i class="fa fa-shopping-cart">
+                                   Add To Cart
+                               </i>
+                           </a>                          
+                       </p>
+                   </div>                   
+               </div>
+           </div>
+           
+           <div class="col-sm-4 col-sm-6 single">
+               
+               <div class="product">
+                   
+                   <a href="details.php">
+                       
+                       <img class="img-responsive" src="admin_area/product_images/product-men-3.jpeg" alt="Product 1">
+                       
+                   </a>
+                   
+                   <div class="text">
+                       
+                       <h3>
+                           <a href="details.php">
+                               Man T-Shirt
+                           </a>
+                       </h3>
+                       
+                       <p class="price">$30</p>
+                       
+                       <p class="button">
+                           
+                           <a href="details.php" class="btn btn-default">View Details</a>
+                           
+                           <a href="details.php" class="btn btn-primary">
+                               
+                               <i class="fa fa-shopping-cart">
+                                   Add To Cart
+                               </i>
+                           </a>                     
+                       </p>                   
+                   </div>               
+               </div>            
+           </div>
+           
+           <div class="col-sm-4 col-sm-6 single">
+               
+               <div class="product">
+                   
+                   <a href="details.php">
+                       
+                       <img class="img-responsive" src="admin_area/product_images/product-women-3.jpeg" alt="Product 1">
+                       
+                   </a>
+                   
+                   <div class="text">
+                       
+                       <h3>
+                           <a href="details.php">
+                               Woman T-Shirt
+                           </a>
+                       </h3>
+                       
+                       <p class="price">$30</p>
+                       
+                       <p class="button">
+                           
+                           <a href="details.php" class="btn btn-default">View Details</a>
+                           
+                           <a href="details.php" class="btn btn-primary">
+                               
+                               <i class="fa fa-shopping-cart">
+                                   Add To Cart
+                               </i>
+                           </a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-sm-4 col-sm-6 single">
+               
+               <div class="product">
+                   
+                   <a href="details.php">
+                       
+                       <img class="img-responsive" src="admin_area/product_images/product-men-4.jpeg" alt="Product 1">
+                       
+                   </a>
+                   
+                   <div class="text">
+                       
+                       <h3>
+                           <a href="details.php">
+                               Man T-Shirt
+                           </a>
+                       </h3>
+                       
+                       <p class="price">$30</p>
+                       
+                       <p class="button">
+                           
+                           <a href="details.php" class="btn btn-default">View Details</a>
+                           
+                           <a href="details.php" class="btn btn-primary">
+                               
+                               <i class="fa fa-shopping-cart">
+                                   Add To Cart
+                               </i>
+                           </a>
+                       </p>                    
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-sm-4 col-sm-6 single">
+               
+               <div class="product">
+                   
+                   <a href="details.php">
+                       
+                       <img class="img-responsive" src="admin_area/product_images/product-women-4.jpeg" alt="Product 1">
+                       
+                   </a>
+                   
+                   <div class="text">
+                       
+                       <h3>
+                           <a href="details.php">
+                               Woman T-Shirt
+                           </a>
+                       </h3>
+                       
+                       <p class="price">$30</p>
+                       
+                       <p class="button">
+                           
+                           <a href="details.php" class="btn btn-default">View Details</a>
+                           
+                           <a href="details.php" class="btn btn-primary">
+                               
+                               <i class="fa fa-shopping-cart">
+                                   Add To Cart
+                               </i>  
+                           </a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+           <!-- New-Products-Content Finish -->
+       </div>
+   </div>
+   <!-- New-Products Finish -->
    
     
     <script src="js/jquery-331.min.js"></script>
