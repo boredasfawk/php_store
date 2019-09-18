@@ -2,6 +2,10 @@
 
 Ecommerce Site
 
+## Getting Started
+
+- Just put folder in /srv/http and open from localhost or wherever your server is
+
 ## Main Goals
 
 - have site where users can look through site for clothes they want
@@ -14,6 +18,8 @@ Ecommerce Site
 ## Built With
 
 - [PHP](http://www.php.net) - Programming Languauge used
+- [Apache](https://httpd.apache.org/docs/2.4/) - HTTP Server used
+- [Mysql- MariaDB](https://mariadb.org/about/) - Database used
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Languauge used
 - [HTML](https://html.spec.whatwg.org/multipage/) - Markup Languauge used
 - [CSS](https://css-tricks.com/) - Stylesheet Languauge used

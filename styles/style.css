@@ -3,10 +3,10 @@ Template Name     : php Store
 Author Name       : Olonnye Taylor
 Author Email      : olonnyetaylor@gmail.com
 Theme URI         : www.php_store.com | localhost/php_store
-Theme Ver         : 1.0
+Theme V.         : 1.0
 */
 
-/* General Styles */
+/* Window Styles */
 html {
   font-size: 10;
 }
@@ -18,8 +18,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Top Styles */
-
+/* Header-Top Styles */
 #top {
   background: #8ca6abad;
   padding: 1.4vmin 0;
@@ -69,8 +68,7 @@ body {
   padding: 0 0.4vmin;
 }
 
-/* Header Styles */
-
+/* Header-Bottom Styles */
 .navbar {
   background: #ffffff;
 }
@@ -176,7 +174,6 @@ img#carousel {
 }
 
 /* offer Styles */
-
 #offer {
   text-align: center;
   margin-top: 4vh;
@@ -260,8 +257,8 @@ img#carousel {
     justify-content: space-around;
   }
 }
-/* New Products Styles */
 
+/* New Products Styles */
 #hot h2 {
   margin: 11vmin;
   font-size: 3.6rem;
@@ -271,10 +268,18 @@ img#carousel {
   text-transform: uppercase;
 }
 #content {
-  padding-left: 3vmin;
+  padding-left: 8vmin;
+  margin: 0 auto;
+}
+
+div#content div.row {
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .single {
   width: 23vw;
+  margin: 0 auto;
 }
 
 #content .product {
@@ -340,4 +345,52 @@ img#carousel {
   .single {
     width: 11vw;
   }
+}
+
+/*  Footer Styles  */
+#footer {
+  background: #acbdc1;
+  padding: 20px 0;
+}
+#footer a {
+  color: #999999;
+  padding: 0;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #666666;
+}
+#footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+#footer .social {
+  text-align: left;
+}
+#footer .social a {
+  margin: 0px 10px 0px 0px;
+  display: inline-block;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 30px;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: bottom;
+  background: #555555;
+  text-decoration: none;
+}
+#footer .social a:hover {
+  color: #dedede;
+  background: #777777;
+}
+#copyright {
+  background: #333333;
+  color: #cccccc;
+  padding: 20px 0px;
+  font-size: 12px;
+}
+#copyright p {
+  margin: 0px;
 }

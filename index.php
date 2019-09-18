@@ -598,6 +598,12 @@
        </div>
    </div>
    <!-- New-Products Finish -->
+
+   <?php 
+    
+    include("includes/footer.php");
+    
+    ?>
    
     
     <script src="js/jquery-331.min.js"></script>
