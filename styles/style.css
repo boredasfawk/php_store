@@ -7,9 +7,11 @@ Theme Ver         : 1.0
 */
 
 /* General Styles */
-
+html {
+  font-size: 10;
+}
 body {
-  font-size: 14px;
+  font-size: 10;
   line-height: 1.42857143;
   color: #333333;
   background: #f0f0f0;
@@ -20,7 +22,7 @@ body {
 
 #top {
   background: #8ca6abad;
-  padding: 10px 0;
+  padding: 1.4vmin 0;
 }
 #top .offer {
   color: #ffffff;
@@ -30,12 +32,12 @@ body {
 }
 @media (max-width: 991px) {
   #top .offer {
-    margin-bottom: 10px;
+    margin-bottom: 1vmin;
   }
 }
 @media (max-width: 991px) {
   #top {
-    font-size: 12px;
+    font-size: 1.2rem;
     text-align: center;
   }
 }
@@ -43,15 +45,16 @@ body {
   color: #ffffff;
 }
 #top ul.menu {
-  padding-top: 5px;
-  margin: 0px;
+  padding-top: 1vmin;
+  margin: 0;
   text-align: right;
-  font-size: 12px;
+  font-size: 1.2rem;
   list-style: none;
 }
 @media (max-width: 991px) {
   #top ul.menu {
     text-align: center;
+    padding-left: 0;
   }
 }
 #top ul.menu > li {
@@ -63,7 +66,7 @@ body {
 #top ul.menu > li + li:before {
   content: "|\00a0";
   color: #f7f7f7;
-  padding: 0 5px;
+  padding: 0 0.4vmin;
 }
 
 /* Header Styles */
@@ -76,10 +79,10 @@ body {
 }
 .navbar-brand {
   float: left;
-  padding: 10px 15px;
-  font-size: 18px;
-  line-height: 20px;
-  height: 70px;
+  padding: 1vmin 1vmin;
+  font-size: 1.8rem;
+  line-height: 1rem;
+  height: 8.1vh;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -88,13 +91,25 @@ body {
 .navbar ul.nav > li > a {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 .navbar ul.nav > li > a:hover {
   background: #e7e7e7;
 }
+
+img.hidden-xs {
+  margin-top: 2vh;
+  height: 7vmin;
+  max-height: 4vmax;
+  width: 4vw;
+}
+
+img.visible-xs {
+  height: 8vh;
+  width: 10vh;
+}
 .padding-nav {
-  padding-top: 10px;
+  padding-top: 1vmin;
 }
 .btn-primary {
   color: rgb(255, 255, 255);
@@ -116,14 +131,73 @@ body {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .navbar-nav {
+    margin-top: 2vh;
+  }
+}
+
 @media (min-width: 2000px) {
   div.navbar {
     height: 5vmax !important;
   }
+  img.hidden-xs {
+    margin-top: 0;
+  }
 }
 
 /* Carousel Style */
+#carousel {
+  display: flex;
+}
 img#carousel {
-  height: 76vh;
+  height: 70vmin;
+  max-height: 76vmax;
   width: 83vw;
+}
+
+/* offer Styles */
+
+#offer {
+  text-align: center;
+  margin-top: 4vh;
+}
+#offer .box {
+  background: #ffffff;
+  margin: 0 0 30px;
+  border: solid 1px #e6e6e6;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+#offer .box .icon {
+  position: absolute;
+  font-size: 120px;
+  width: 100%;
+  text-align: center;
+  top: -20px;
+  left: 0px;
+  height: 100%;
+  float: left;
+  color: #dadada;
+  box-sizing: border-box;
+  z-index: 1;
+}
+#offer .box h3 {
+  position: relative;
+  margin: 0 0 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  z-index: 2;
+}
+#offer .box h3 a {
+  color: #4fbfa8;
+}
+#offer .box h3 a:hover {
+  text-decoration: none;
+}
+#offer .box p {
+  position: relative;
+  z-index: 2;
+  color: #555555;
 }

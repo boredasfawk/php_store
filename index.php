@@ -14,14 +14,14 @@
    <div id="top">
     
        <div class="container">
-           <!-- Offer Begin -->
+           <!-- Welcome Begin -->
            <div class="col-md-6 offer">
                
                <a href="#" class="btn btn-success btn-sm">Welcome</a>
                <a href="checkout.php">CheckOut</a>
                
            </div>
-           <!-- Offer Finish -->
+           <!-- Welcome Finish -->
 
            <!-- Menu-content Begin -->
            <div class="col-md-6">
@@ -60,8 +60,8 @@
                
                <a href="index.php" class="navbar-brand home">
                    
-                   <img src="images/ecom-store-logo.png" alt="Php_Store Logo" class="hidden-xs" style="min-height: 2vmin; max-height: 4vmax; width: 8vw;">
-                   <img src="images/ecom-store-logo-mobile.png" alt="Php_Store Logo Mobile" class="visible-xs" style="height: 8vh; width: 10vh;">
+                   <img src="images/ecom-store-logo.png" alt="Php_Store Logo" class="hidden-xs">
+                   <img src="images/ecom-store-logo-mobile.png" alt="Php_Store Logo Mobile" class="visible-xs">
                    
                </a>
                
@@ -182,7 +182,7 @@
                    
                </ol>
                
-               <div class="carousel-inner" style="max-height: 72vmax; min-height: 37vmin;">
+               <div class="carousel-inner">
                    
                    <div class="item active">
                        
@@ -231,6 +231,74 @@
        
    </div>
    <!-- carousel-slide Finish -->
+   
+   <!-- Offers Begin -->
+   <div id="offer">
+       
+       <div class="container">
+           
+           <div class="same-height-row">
+               
+               <div class="col-sm-4">
+                   
+                   <div class="box same-height">
+                       
+                       <div class="icon">
+                           
+                           <i class="fa fa-heart"></i>
+                           
+                       </div>
+                       
+                       <h3><a href="#">Best Offer</a></h3>
+                       
+                       <p>Wherry squiffy man-of-war Spanish Main code of conduct quarter</p>
+                       
+                   </div>
+                   
+               </div>
+               
+               <div class="col-sm-4">
+                   
+                   <div class="box same-height">
+                       
+                       <div class="icon">
+                           
+                           <i class="fa fa-tag"></i>
+                           
+                       </div>
+                       
+                       <h3><a href="#">Best Prices</a></h3>
+                       
+                       <p>Pinnace main sheet weigh anchor carouser matey Chain, consectetur adipisicing elit.</p>
+                       
+                   </div>
+                   
+               </div>
+               
+               <div class="col-sm-4">
+                   
+                   <div class="box same-height">
+                       
+                       <div class="icon">
+                           
+                           <i class="fa fa-thumbs-up"></i>
+                           
+                       </div>
+                       
+                       <h3><a href="#">100% Original</a></h3>
+                       
+                       <p>Bucko Arr Jack Ketch draft pirate Admiral of the Black parley lugger stern Blimey.</p>
+                       
+                   </div>
+                   
+               </div>
+               
+           </div>
+           
+       </div>
+       
+   </div>
+   <!-- Offers Finish -->
    
     
     <script src="js/jquery-331.min.js"></script>
