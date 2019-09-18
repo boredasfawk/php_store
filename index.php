@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="cache-control" content="no-cache">
-    <title>Interview Project</title>
+    <title>Code Sample</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -19,7 +19,7 @@
                
                <a href="#" class="btn btn-success btn-sm">Welcome</a>
                
-               <a href="checkout.php">CheckOut</a>
+               <a href="customer/checkout.php">CheckOut</a>
                
            </div>
            <!-- Welcome Finish -->
@@ -31,25 +31,25 @@
                    
                    <li>
                        
-                     <a href="customer_register.php">Register</a>
+                     <a href="customer/customer_register.php">Register</a>
                    
                     </li>
                    
                    <li>
                    
-                     <a href="checkout.php">My Account</a>
+                     <a href="customer/checkout.php">My Account</a>
                    
                     </li>
 
                    <li>
                        
-                       <a href="cart.php">Go To Cart</a>
+                       <a href="customer/cart.php">Go To Cart</a>
 
                    </li>
 
                    <li>
 
-                       <a href="checkout.php">Login</a>
+                       <a href="customer/checkout.php">Login</a>
 
                    </li>
                </ul>
@@ -102,16 +102,16 @@
                            <a href="index.php">Home</a>
                        </li>
                        <li>
-                           <a href="shop.php">Shop</a>
+                           <a href="customer/shop.php">Shop</a>
                        </li>
                        <li>
-                           <a href="checkout.php">My Account</a>
+                           <a href="customer/checkout.php">My Account</a>
                        </li>
                        <li>
-                           <a href="cart.php">Shopping Cart</a>
+                           <a href="customer/cart.php">Shopping Cart</a>
                        </li>
                        <li>
-                           <a href="contact.php">Contact Us</a>
+                           <a href="customer/contact.php">Contact Us</a>
                        </li> 
                    </ul> 
                </div>
@@ -319,7 +319,7 @@
                
                <div class="product">
                    
-                   <a href="details.php">
+                   <a href="customer/details.php">
                        
                        <img class="img-responsive" src="admin_area/product_images/product-women-5.jpeg" alt="Product 1">
                        
@@ -328,7 +328,7 @@
                    <div class="text">
                        
                        <h3>
-                           <a href="details.php">
+                           <a href="customer/details.php">
                                Woman T-Shirt
                            </a>
                        </h3>
@@ -337,9 +337,9 @@
                        
                        <p class="button">
                            
-                           <a href="details.php" class="btn btn-default">View Details</a>
+                           <a href="customer/details.php" class="btn btn-default">View Details</a>
                            
-                           <a href="details.php" class="btn btn-primary">
+                           <a href="customer/details.php" class="btn btn-primary">
                                
                                <i class="fa fa-shopping-cart">
                                    Add To Cart
@@ -354,16 +354,16 @@
                
                <div class="product">
                    
-                   <a href="details.php">
+                   <a href="customer/details.php">
                        
-                       <img class="img-responsive" src="admin_area/product_images/product-men-1.jpeg" alt="Product 1">
+                       <img class="img-responsive" src="admin_area/product_images/product-men-1.jpeg" alt="Product 2">
                        
                    </a>
                    
                    <div class="text">
                        
                        <h3>
-                           <a href="details.php">
+                           <a href="customer/details.php">
                                Man T-Shirt
                            </a>
                        </h3>
@@ -372,9 +372,9 @@
                        
                        <p class="button">
                            
-                           <a href="details.php" class="btn btn-default">View Details</a>
+                           <a href="customer/details.php" class="btn btn-default">View Details</a>
                            
-                           <a href="details.php" class="btn btn-primary">
+                           <a href="customer/details.php" class="btn btn-primary">
                                
                                <i class="fa fa-shopping-cart">
                                    Add To Cart
@@ -389,16 +389,16 @@
                
                <div class="product">
                    
-                   <a href="details.php">
+                   <a href="customer/details.php">
                        
-                       <img class="img-responsive" src="admin_area/product_images/product-women-2.jpeg" alt="Product 1">
+                       <img class="img-responsive" src="admin_area/product_images/product-women-2.jpeg" alt="Product 3">
                        
                    </a>
                    
                    <div class="text">
                        
                        <h3>
-                           <a href="details.php">
+                           <a href="customer/details.php">
                                Woman T-Shirt
                            </a>
                        </h3>
@@ -407,9 +407,9 @@
                        
                        <p class="button">
                            
-                           <a href="details.php" class="btn btn-default">View Details</a>
+                           <a href="customer/details.php" class="btn btn-default">View Details</a>
                            
-                           <a href="details.php" class="btn btn-primary">
+                           <a href="customer/details.php" class="btn btn-primary">
                                
                                <i class="fa fa-shopping-cart">
                                    Add To Cart
@@ -424,16 +424,16 @@
                
                <div class="product">
                    
-                   <a href="details.php">
+                   <a href="customer/details.php">
                        
-                       <img class="img-responsive" src="admin_area/product_images/product-men-2.jpeg" alt="Product 1">
+                       <img class="img-responsive" src="admin_area/product_images/product-men-2.jpeg" alt="Product 4">
                        
                    </a>
                    
                    <div class="text">
                        
                        <h3>
-                           <a href="details.php">
+                           <a href="customer/details.php">
                                Man T-Shirt
                            </a>
                        </h3>
@@ -442,9 +442,9 @@
                        
                        <p class="button">
                            
-                           <a href="details.php" class="btn btn-default">View Details</a>
+                           <a href="customer/details.php" class="btn btn-default">View Details</a>
                            
-                           <a href="details.php" class="btn btn-primary">
+                           <a href="customer/details.php" class="btn btn-primary">
                                
                                <i class="fa fa-shopping-cart">
                                    Add To Cart
@@ -459,16 +459,16 @@
                
                <div class="product">
                    
-                   <a href="details.php">
+                   <a href="customer/details.php">
                        
-                       <img class="img-responsive" src="admin_area/product_images/product-men-3.jpeg" alt="Product 1">
+                       <img class="img-responsive" src="admin_area/product_images/product-men-3.jpeg" alt="Product 5">
                        
                    </a>
                    
                    <div class="text">
                        
                        <h3>
-                           <a href="details.php">
+                           <a href="customer/details.php">
                                Man T-Shirt
                            </a>
                        </h3>
@@ -477,9 +477,9 @@
                        
                        <p class="button">
                            
-                           <a href="details.php" class="btn btn-default">View Details</a>
+                           <a href="customer/details.php" class="btn btn-default">View Details</a>
                            
-                           <a href="details.php" class="btn btn-primary">
+                           <a href="customer/details.php" class="btn btn-primary">
                                
                                <i class="fa fa-shopping-cart">
                                    Add To Cart
@@ -494,16 +494,16 @@
                
                <div class="product">
                    
-                   <a href="details.php">
+                   <a href="customer/details.php">
                        
-                       <img class="img-responsive" src="admin_area/product_images/product-women-3.jpeg" alt="Product 1">
+                       <img class="img-responsive" src="admin_area/product_images/product-women-3.jpeg" alt="Product 6">
                        
                    </a>
                    
                    <div class="text">
                        
                        <h3>
-                           <a href="details.php">
+                           <a href="customer/details.php">
                                Woman T-Shirt
                            </a>
                        </h3>
@@ -512,9 +512,9 @@
                        
                        <p class="button">
                            
-                           <a href="details.php" class="btn btn-default">View Details</a>
+                           <a href="customer/details.php" class="btn btn-default">View Details</a>
                            
-                           <a href="details.php" class="btn btn-primary">
+                           <a href="customer/details.php" class="btn btn-primary">
                                
                                <i class="fa fa-shopping-cart">
                                    Add To Cart
@@ -529,16 +529,16 @@
                
                <div class="product">
                    
-                   <a href="details.php">
+                   <a href="customer/details.php">
                        
-                       <img class="img-responsive" src="admin_area/product_images/product-men-4.jpeg" alt="Product 1">
+                       <img class="img-responsive" src="admin_area/product_images/product-men-4.jpeg" alt="Product 7">
                        
                    </a>
                    
                    <div class="text">
                        
                        <h3>
-                           <a href="details.php">
+                           <a href="customer/details.php">
                                Man T-Shirt
                            </a>
                        </h3>
@@ -547,9 +547,9 @@
                        
                        <p class="button">
                            
-                           <a href="details.php" class="btn btn-default">View Details</a>
+                           <a href="customer/details.php" class="btn btn-default">View Details</a>
                            
-                           <a href="details.php" class="btn btn-primary">
+                           <a href="customer/details.php" class="btn btn-primary">
                                
                                <i class="fa fa-shopping-cart">
                                    Add To Cart
@@ -564,16 +564,16 @@
                
                <div class="product">
                    
-                   <a href="details.php">
+                   <a href="customer/details.php">
                        
-                       <img class="img-responsive" src="admin_area/product_images/product-women-4.jpeg" alt="Product 1">
+                       <img class="img-responsive" src="admin_area/product_images/product-women-4.jpeg" alt="Product 8">
                        
                    </a>
                    
                    <div class="text">
                        
                        <h3>
-                           <a href="details.php">
+                           <a href="customer/details.php">
                                Woman T-Shirt
                            </a>
                        </h3>
@@ -582,9 +582,9 @@
                        
                        <p class="button">
                            
-                           <a href="details.php" class="btn btn-default">View Details</a>
+                           <a href="customer/details.php" class="btn btn-default">View Details</a>
                            
-                           <a href="details.php" class="btn btn-primary">
+                           <a href="customer/details.php" class="btn btn-primary">
                                
                                <i class="fa fa-shopping-cart">
                                    Add To Cart

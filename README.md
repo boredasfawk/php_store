@@ -4,7 +4,8 @@ Ecommerce Site
 
 ## Getting Started
 
-- Just put folder in /srv/http and open from localhost or wherever your server is
+- Just put folder where server is stored if local, i.e. '/srv/http/'.
+- index.php is starting point
 
 ## Main Goals
 
