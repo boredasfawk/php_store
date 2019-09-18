@@ -18,7 +18,7 @@
   ?>
    
   <!-- Cart Begin -->
-  <div id="content">
+  <div id="content" class="cart">
       <div class="container">
           <div class="col-md-12">
               <!-- Crumb Begin -->
@@ -217,7 +217,7 @@
                                 <tr>
                                     
                                     <th colspan="5">Total</th>
-                                    <th colspan="2">$100</th>
+                                    <th colspan="2">$600</th>
                                     
                                 </tr>
                                 
@@ -227,7 +227,7 @@
                           
                       </div>
                       
-                      <div class="box-footer">
+                      <div id="cart" class="box-footer">
                           
                           <div class="pull-left">
                               
@@ -261,7 +261,9 @@
                   
               </div>
               
-              <div id="row same-heigh-row">
+              <!-- TODO: messing up flow of page check back after making page dynamic -->
+
+              <!-- <div id="row same-heigh-row">
                   <div class="col-md-3 col-sm-6">
                       <div id="cart" class="box same-height headline">
                           <h3 class="text-center">Products You Maybe Like</h3>
@@ -318,13 +320,13 @@
                   
               </div>
               
-          </div>
+          </div> -->
           
           <div class="col-md-3">
               
               <div id="order-summary" class="box">
                   
-                  <div class="box-header">
+                  <div id="cart" class="box-header">
                       
                       <h3>Order Summary</h3>
                       
@@ -345,7 +347,7 @@
                               <tr>
                                   
                                   <td> Order Sub-Total </td>
-                                  <th> $200 </th>
+                                  <th> $600 </th>
                                   
                               </tr>
                               
@@ -366,7 +368,7 @@
                               <tr class="total">
                                   
                                   <td> Total </td>
-                                  <th> $200 </th>
+                                  <th> $600 </th>
                                   
                               </tr>
                           </tbody>

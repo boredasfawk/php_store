@@ -435,6 +435,21 @@ div.col-md-12.details {
   height: 53vh;
 }
 
+@media (max-width: 768px) {
+  div#content.cart {
+    padding-left: 0;
+  }
+  div#cart.box-header {
+    margin: -1vmin -1.5vmin 5.5vmin 0.5vmin;
+    padding: 2.5vmin;
+  }
+
+  div#cart.box-footer {
+    margin: 4vmin -2vmin 3.5vmin 0vmin;
+    padding: 2.5vmin;
+  }
+}
+
 @media (max-width: 500px) {
   div.center-responsive.details {
     width: 56vw;
