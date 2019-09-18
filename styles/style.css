@@ -410,6 +410,33 @@ div#content div.row {
 }
 /*  SHOP PAGE FINISH */
 
+/*  DETAILS PAGE BEGIN*/
+div.col-md-12.details {
+  margin: 3vmin 0 6vmin 0;
+}
+#content #productMain {
+  margin-bottom: 2vmin;
+}
+#content #productMain .price {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 2vmin;
+}
+#content #mainImage {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7);
+}
+#content #thumbs a {
+  display: block;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+}
+#content .headline {
+  height: 53vh;
+}
+
+/*  DETAILS PAGE FINISH*/
+
 /*  Footer Styles  */
 #footer {
   background: #acbdc1;
