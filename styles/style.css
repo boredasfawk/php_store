@@ -435,7 +435,88 @@ div.col-md-12.details {
   height: 53vh;
 }
 
+@media (max-width: 500px) {
+  div.center-responsive.details {
+    width: 56vw;
+  }
+
+  div#details.box.headline {
+    height: 14vh;
+    margin-top: 20vmin;
+  }
+}
+
 /*  DETAILS PAGE FINISH*/
+
+/* CART PAGE BEGIN */
+
+#content #cart .table tbody tr td img {
+  width: 5vw;
+}
+#content #cart .table tbody tr td input {
+  width: 4vw;
+  text-align: right;
+}
+#content #cart .table tbody tr td {
+  vertical-align: middle;
+}
+#content #cart .table tfoot {
+  font-size: 1.5rem;
+}
+.box .box-footer {
+  background-color: #f7f7f7;
+  margin: 2vmin 1vmin 1.5vmin 0;
+  padding: 1.5vmin;
+  border-top: 1px solid #eeeeee;
+}
+.box .box-footer:before,
+.box .box-footer:after {
+  content: "";
+  display: table;
+}
+.box .box-footer:after {
+  clear: both;
+}
+.box .box-header {
+  background-color: #f7f7f7;
+  margin: -0.5vmin -1.5vmin 0.5vmin 0.5vmin;
+  padding: 0.5vmin;
+  border-top: 1px solid #eeeeee;
+}
+#content #order-summary table {
+  margin-top: 1vmin;
+}
+#content #order-summary table td {
+  color: #999999;
+}
+#content #order-summary table tr.total td,
+#content #order-summary table tr.total th {
+  font-size: 1.5rem;
+  color: #555555;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .box .box-footer {
+    margin: 1vmin 1vmin 1.5vmin 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 10vmin;
+    overflow-x: scroll;
+    flex-direction: column;
+  }
+
+  div.center-responsive.cart {
+    width: 56vw;
+  }
+
+  div#cart.box.headline {
+    height: 14vh;
+    margin-top: 20vmin;
+  }
+}
+/* CART PAGE FINISH */
 
 /*  Footer Styles  */
 #footer {

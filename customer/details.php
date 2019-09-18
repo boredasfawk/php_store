@@ -212,14 +212,14 @@
 
                   <div class="col-md-3 col-sm-6">
 
-                    <div class="box same-height headline">
+                    <div id="details" class="box same-height headline">
 
                         <h3 class="text-center">Products You Maybe Like</h3>
 
                     </div>
                   </div>
                 
-                  <div class="col-md-3 col-sm-6 center-responsive">
+                  <div class="col-md-3 col-sm-6 center-responsive details">
 
                     <div class="product same-height">
 
@@ -239,7 +239,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3 col-sm-6 center-responsive">
+                <div class="col-md-3 col-sm-6 center-responsive details">
 
                   <div class="product same-height">
 
@@ -258,7 +258,7 @@
                   </div>
                 </div>
                 
-                <div class="col-md-3 col-sm-6 center-responsive">
+                <div class="col-md-3 col-sm-6 center-responsive details">
                   
                     <div class="product same-height">
                         <a href="details.php">
