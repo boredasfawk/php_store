@@ -77,7 +77,7 @@
 
               <label>Email</label>
 
-              <input type="text" class="form-control" name="email" required>
+              <input type="email" class="form-control" name="email" required>
 
             </div>
 
@@ -117,7 +117,7 @@
     <!-- Contact-Content Finish -->
   </div>
 </div>
-<!-- Contact-Content Finish -->
+<!-- Contact Finish -->
 <?php
 
     include __DIR__ . "/../includes/footer.php";
