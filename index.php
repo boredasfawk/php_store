@@ -39,7 +39,7 @@
 
           <li>
 
-            <a href="tabs/checkout.php">My Account</a>
+            <a href="customer_area/my_account.php">My Account</a>
 
           </li>
 
@@ -107,7 +107,7 @@
               <a href="tabs/shop.php">Shop</a>
             </li>
             <li>
-              <a href="tabs/checkout.php">My Account</a>
+              <a href="customer_area/my_account.php">My Account</a>
             </li>
             <li>
               <a href="tabs/cart.php">Shopping Cart</a>
@@ -617,7 +617,7 @@
             <li><a href="tabs/cart.php">Shopping Cart</a></li>
             <li><a href="tabs/contact.php">Contact Us</a></li>
             <li><a href="tabs/shop.php">Shop</a></li>
-            <li><a href="tabs/checkout.php">My Account</a></li>
+            <li><a href="customer_area/my_account.php">My Account</a></li>
           </ul>
 
           <hr>
@@ -725,8 +725,8 @@
   </div>
   <!-- Footer Finish -->
 
-  <script src="../js/jquery-331.min.js"></script>
-  <script src="../js/bootstrap-337.min.js"></script>
+  <script src="js/jquery-331.min.js"></script>
+  <script src="js/bootstrap-337.min.js"></script>
 
 
 </body>

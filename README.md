@@ -2,6 +2,16 @@
 
 Ecommerce Site
 
+## Description
+
+I wanted to make a simple site that has the potential to be an actual ecommerce store.
+I didnt write any code to connect to a DB or have any real dynamic features due to time
+but also didnt want site to get overly complex for sample code.
+
+If interested in the results I'll keep working on this site since it was a pretty fun little project. I should have something deployed and up on my [Portfolio Site](http://olonnye.com) by next week.
+
+The whole project is also on my [github](https://github.com/boredasfawk) as well.
+
 ## Getting Started
 
 - Just put folder where server is stored if local, i.e. '/srv/http/'.
@@ -10,11 +20,14 @@ Ecommerce Site
 ## Main Goals
 
 - have site where users can look through site for clothes they want
-- once clothing item is selected user can checkout
+- once clothing item is selected user can go a cart to check out
 
 ## Stretch Goals
 
+- creat db to store clothing, user info, admin info, etc
+- make pages dynamic
 - have an admin area where siteowner can make changes
+- have log in/out functions
 
 ## Built With
 

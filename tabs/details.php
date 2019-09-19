@@ -120,11 +120,13 @@
 
                     <select name="product_qty" id="" class="form-control">
 
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
+                      <?php
+                        for ($i=0; $i<=100; $i++) {
+                      ?>
+                      <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                      <?php
+                        }
+                      ?>
                     </select>
 
                   </div>
