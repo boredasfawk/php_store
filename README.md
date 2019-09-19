@@ -12,6 +12,8 @@ If interested in the results I'll keep working on this site since it was a prett
 
 The whole project is also on my [github](https://github.com/boredasfawk) as well.
 
+FYI-- Most folders are there to give some idea how i want the finaly project to be structured
+
 ## Getting Started
 
 - Just put folder where server is stored if local, i.e. '/srv/http/'.
