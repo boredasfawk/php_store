@@ -121,6 +121,15 @@
 
             </div>
 
+            <!-- TODO: Get Working For Long Term Goal -->
+            <!-- <div class="form-group">
+
+              <label>Upload File</label>
+
+              <input type="file" class="form-control" name="file" required>
+
+            </div> -->
+
             <div class="text-center">
 
               <button type="submit" name="submit" class="btn btn-primary">

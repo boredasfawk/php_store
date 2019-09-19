@@ -21,7 +21,7 @@
 
         <a href="#" class="btn btn-success btn-sm">Welcome</a>
 
-        <a href="customer/checkout.php">CheckOut</a>
+        <a href="tabs/checkout.php">CheckOut</a>
 
       </div>
       <!-- Welcome Finish -->
@@ -33,25 +33,25 @@
 
           <li>
 
-            <a href="customer/customer_register.php">Register</a>
+            <a href="tabs/customer_register.php">Register</a>
 
           </li>
 
           <li>
 
-            <a href="customer/checkout.php">My Account</a>
+            <a href="tabs/checkout.php">My Account</a>
 
           </li>
 
           <li>
 
-            <a href="customer/cart.php">Go To Cart</a>
+            <a href="tabs/cart.php">Go To Cart</a>
 
           </li>
 
           <li>
 
-            <a href="customer/checkout.php">Login</a>
+            <a href="tabs/checkout.php">Login</a>
 
           </li>
         </ul>
@@ -104,16 +104,16 @@
               <a href="index.php">Home</a>
             </li>
             <li>
-              <a href="customer/shop.php">Shop</a>
+              <a href="tabs/shop.php">Shop</a>
             </li>
             <li>
-              <a href="customer/checkout.php">My Account</a>
+              <a href="tabs/checkout.php">My Account</a>
             </li>
             <li>
-              <a href="customer/cart.php">Shopping Cart</a>
+              <a href="tabs/cart.php">Shopping Cart</a>
             </li>
             <li>
-              <a href="customer/contact.php">Contact Us</a>
+              <a href="tabs/contact.php">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -324,7 +324,7 @@
 
         <div class="product">
 
-          <a href="customer/details.php">
+          <a href="tabs/details.php">
 
             <img class="img-responsive" src="admin_area/product_images/product-women-5.jpeg" alt="Product 1">
 
@@ -333,7 +333,7 @@
           <div class="text">
 
             <h3>
-              <a href="customer/details.php">
+              <a href="tabs/details.php">
                 Woman T-Shirt
               </a>
             </h3>
@@ -342,9 +342,9 @@
 
             <p class="button">
 
-              <a href="customer/details.php" class="btn btn-default">View Details</a>
+              <a href="tabs/details.php" class="btn btn-default">View Details</a>
 
-              <a href="customer/details.php" class="btn btn-primary">
+              <a href="tabs/details.php" class="btn btn-primary">
 
                 <i class="fa fa-shopping-cart">
                   Add To Cart
@@ -359,7 +359,7 @@
 
         <div class="product">
 
-          <a href="customer/details.php">
+          <a href="tabs/details.php">
 
             <img class="img-responsive" src="admin_area/product_images/product-men-1.jpeg" alt="Product 2">
 
@@ -368,7 +368,7 @@
           <div class="text">
 
             <h3>
-              <a href="customer/details.php">
+              <a href="tabs/details.php">
                 Man T-Shirt
               </a>
             </h3>
@@ -377,9 +377,9 @@
 
             <p class="button">
 
-              <a href="customer/details.php" class="btn btn-default">View Details</a>
+              <a href="tabs/details.php" class="btn btn-default">View Details</a>
 
-              <a href="customer/details.php" class="btn btn-primary">
+              <a href="tabs/details.php" class="btn btn-primary">
 
                 <i class="fa fa-shopping-cart">
                   Add To Cart
@@ -394,7 +394,7 @@
 
         <div class="product">
 
-          <a href="customer/details.php">
+          <a href="tabs/details.php">
 
             <img class="img-responsive" src="admin_area/product_images/product-women-2.jpeg" alt="Product 3">
 
@@ -403,7 +403,7 @@
           <div class="text">
 
             <h3>
-              <a href="customer/details.php">
+              <a href="tabs/details.php">
                 Woman T-Shirt
               </a>
             </h3>
@@ -412,9 +412,9 @@
 
             <p class="button">
 
-              <a href="customer/details.php" class="btn btn-default">View Details</a>
+              <a href="tabs/details.php" class="btn btn-default">View Details</a>
 
-              <a href="customer/details.php" class="btn btn-primary">
+              <a href="tabs/details.php" class="btn btn-primary">
 
                 <i class="fa fa-shopping-cart">
                   Add To Cart
@@ -429,7 +429,7 @@
 
         <div class="product">
 
-          <a href="customer/details.php">
+          <a href="tabs/details.php">
 
             <img class="img-responsive" src="admin_area/product_images/product-men-2.jpeg" alt="Product 4">
 
@@ -438,7 +438,7 @@
           <div class="text">
 
             <h3>
-              <a href="customer/details.php">
+              <a href="tabs/details.php">
                 Man T-Shirt
               </a>
             </h3>
@@ -447,9 +447,9 @@
 
             <p class="button">
 
-              <a href="customer/details.php" class="btn btn-default">View Details</a>
+              <a href="tabs/details.php" class="btn btn-default">View Details</a>
 
-              <a href="customer/details.php" class="btn btn-primary">
+              <a href="tabs/details.php" class="btn btn-primary">
 
                 <i class="fa fa-shopping-cart">
                   Add To Cart
@@ -464,7 +464,7 @@
 
         <div class="product">
 
-          <a href="customer/details.php">
+          <a href="tabs/details.php">
 
             <img class="img-responsive" src="admin_area/product_images/product-men-3.jpeg" alt="Product 5">
 
@@ -473,7 +473,7 @@
           <div class="text">
 
             <h3>
-              <a href="customer/details.php">
+              <a href="tabs/details.php">
                 Man T-Shirt
               </a>
             </h3>
@@ -482,9 +482,9 @@
 
             <p class="button">
 
-              <a href="customer/details.php" class="btn btn-default">View Details</a>
+              <a href="tabs/details.php" class="btn btn-default">View Details</a>
 
-              <a href="customer/details.php" class="btn btn-primary">
+              <a href="tabs/details.php" class="btn btn-primary">
 
                 <i class="fa fa-shopping-cart">
                   Add To Cart
@@ -499,7 +499,7 @@
 
         <div class="product">
 
-          <a href="customer/details.php">
+          <a href="tabs/details.php">
 
             <img class="img-responsive" src="admin_area/product_images/product-women-3.jpeg" alt="Product 6">
 
@@ -508,7 +508,7 @@
           <div class="text">
 
             <h3>
-              <a href="customer/details.php">
+              <a href="tabs/details.php">
                 Woman T-Shirt
               </a>
             </h3>
@@ -517,9 +517,9 @@
 
             <p class="button">
 
-              <a href="customer/details.php" class="btn btn-default">View Details</a>
+              <a href="tabs/details.php" class="btn btn-default">View Details</a>
 
-              <a href="customer/details.php" class="btn btn-primary">
+              <a href="tabs/details.php" class="btn btn-primary">
 
                 <i class="fa fa-shopping-cart">
                   Add To Cart
@@ -534,7 +534,7 @@
 
         <div class="product">
 
-          <a href="customer/details.php">
+          <a href="tabs/details.php">
 
             <img class="img-responsive" src="admin_area/product_images/product-men-4.jpeg" alt="Product 7">
 
@@ -543,7 +543,7 @@
           <div class="text">
 
             <h3>
-              <a href="customer/details.php">
+              <a href="tabs/details.php">
                 Man T-Shirt
               </a>
             </h3>
@@ -552,9 +552,9 @@
 
             <p class="button">
 
-              <a href="customer/details.php" class="btn btn-default">View Details</a>
+              <a href="tabs/details.php" class="btn btn-default">View Details</a>
 
-              <a href="customer/details.php" class="btn btn-primary">
+              <a href="tabs/details.php" class="btn btn-primary">
 
                 <i class="fa fa-shopping-cart">
                   Add To Cart
@@ -569,7 +569,7 @@
 
         <div class="product">
 
-          <a href="customer/details.php">
+          <a href="tabs/details.php">
 
             <img class="img-responsive" src="admin_area/product_images/product-women-4.jpeg" alt="Product 8">
 
@@ -578,7 +578,7 @@
           <div class="text">
 
             <h3>
-              <a href="customer/details.php">
+              <a href="tabs/details.php">
                 Woman T-Shirt
               </a>
             </h3>
@@ -587,9 +587,9 @@
 
             <p class="button">
 
-              <a href="customer/details.php" class="btn btn-default">View Details</a>
+              <a href="tabs/details.php" class="btn btn-default">View Details</a>
 
-              <a href="customer/details.php" class="btn btn-primary">
+              <a href="tabs/details.php" class="btn btn-primary">
 
                 <i class="fa fa-shopping-cart">
                   Add To Cart
@@ -604,8 +604,131 @@
   </div>
   <!-- New-Products Finish -->
 
-  <?php 
-    
-    include("includes/footer.php");
-    
-  ?>
+  <!-- Footer Begin -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Footer-Content Begin -->
+        <div class="col-sm-6 col-md-3">
+
+          <h4>Pages</h4>
+
+          <ul>
+            <li><a href="tabs/cart.php">Shopping Cart</a></li>
+            <li><a href="tabs/contact.php">Contact Us</a></li>
+            <li><a href="tabs/shop.php">Shop</a></li>
+            <li><a href="tabs/checkout.php">My Account</a></li>
+          </ul>
+
+          <hr>
+
+          <h4>User Section</h4>
+
+          <ul>
+            <li><a href="tabs/login.php">Login</a></li>
+            <li><a href="tabs/customer_register.php">Register</a></li>
+          </ul>
+
+          <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+
+        <div class="com-sm-6 col-md-3">
+
+          <h4>Top Products Categories</h4>
+
+          <ul>
+            <li><a href="#">Jackets</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Coats</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">T-Shirts</a></li>
+          </ul>
+
+          <hr class="hidden-md hidden-lg">
+
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+
+          <h4>Find Us</h4>
+
+          <p>
+
+            <strong>Bored inc.</strong>
+            <br />Las Vegas,
+            <br />Nevada
+            <br />702-356-6202
+            <br />olonnyetaylor@gmail.com
+
+          </p>
+
+          <a href="tabs/contact.php">Check Our Contact Page</a>
+
+          <hr class="hidden-md hidden-lg">
+
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+
+          <h4>Get The News</h4>
+
+          <p class="text-muted">
+            Dont miss our latest update products.
+          </p>
+
+          <form action="" method="post">
+            <div class="input-group">
+
+              <input type="text" class="form-control" name="email">
+
+              <span class="input-group-btn">
+
+                <input type="submit" value="subscribe" class="btn btn-default">
+
+              </span>
+            </div>
+          </form>
+
+          <hr>
+
+          <h4>Keep In Touch</h4>
+
+          <p class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-google-plus"></a>
+            <a href="#" class="fa fa-envelope"></a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="copyright">
+    <div class="container">
+      <div class="col-md-6">
+
+        <p class="pull-left">&copy; 2019 Php Store All Rights Reserve</p>
+
+      </div>
+      <div class="col-md-6">
+
+        <p class="pull-right">Theme by: <a href="https://olonnye.com">Olonnye Taylor</a></p>
+
+      </div>
+      <!-- Footer-Content Finish -->
+    </div>
+  </div>
+  <!-- Footer Finish -->
+
+  <script src="../js/jquery-331.min.js"></script>
+  <script src="../js/bootstrap-337.min.js"></script>
+
+
+</body>
+
+</html>
