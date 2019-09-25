@@ -1,3 +1,10 @@
+<?php 
+
+  include("includes/db.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="cache-control" content="no-cache">
-  <title>Code Sample</title>
+  <title>X.o.X Store</title>
   <link rel="stylesheet" href="styles/bootstrap-337.min.css">
   <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -118,7 +125,7 @@
           </ul>
         </div>
 
-        <a href="cart.php" class="btn navbar-btn btn-primary right">
+        <a href="tabs/cart.php" class="btn navbar-btn btn-primary right">
 
           <i class="fa fa-shopping-cart"></i>
 
@@ -186,32 +193,54 @@
         </ol>
 
         <div class="carousel-inner">
-
-          <div class="item active">
-
-            <img id="carousel" src="admin_area/slides_images/slide-1.jpg" alt="Slider Image 1">
-
-          </div>
-
-          <div class="item">
-
-            <img id="carousel" src="admin_area/slides_images/slide-2.jpg" alt="Slider Image 2">
-
-          </div>
-
-          <div class="item">
-
-            <img id="carousel" src="admin_area/slides_images/slide-3.jpg" alt="Slider Image 3">
-
-          </div>
-
-          <div class="item">
-
-            <img id="carousel" src="admin_area/slides_images/slide-4.jpg" alt="Slider Image 4">
-
-          </div>
+          <!-- Dynamic-Carousel Begin -->
+          <?php 
+            
+            $get_slides = "select * from slider LIMIT 0,1";
+            
+            $run_slides = mysqli_query($con,$get_slides);
+            
+            while($row_slides=mysqli_fetch_array($run_slides)){
+                
+                $slide_name = $row_slides['slide_name'];
+                $slide_image = $row_slides['slide_image'];
+                
+                echo "
+                
+                <div  class='item active'>
+                
+                <img id='carousel' src='admin_area/slides_images/$slide_image'>
+                
+                </div>
+                
+                ";
+                
+            }
+            
+            $get_slides = "select * from slider LIMIT 1,3";
+            
+            $run_slides = mysqli_query($con,$get_slides);
+            
+            while($row_slides=mysqli_fetch_array($run_slides)){
+                
+                $slide_name = $row_slides['slide_name'];
+                $slide_image = $row_slides['slide_image'];
+                
+                echo "
+                
+                <div class='item'>
+                
+                <img id='carousel' src='admin_area/slides_images/$slide_image'>
+                
+                </div>
+                
+                ";
+                
+            }
+            
+          ?>
         </div>
-
+        <!-- Dynamic-Carousel Finish -->
         <a href="#myCarousel" class="left carousel-control" data-slide="prev">
           <!-- left carousel-control Begin -->
 

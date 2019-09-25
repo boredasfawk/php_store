@@ -1,5 +1,6 @@
   <?php 
-    
+    $title = 'Clothing Details';
+  
     include __DIR__ . "/../includes/header.php" ;
     
   ?>

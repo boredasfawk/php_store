@@ -1,5 +1,6 @@
 <?php
-
+  $title = 'Register';
+  
   include __DIR__ . "/../includes/header.php";
 
 ?>
