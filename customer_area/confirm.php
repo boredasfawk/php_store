@@ -1,4 +1,6 @@
 <?php
+  $title = 'Confirm';
+  
   include($_SERVER['DOCUMENT_ROOT']. "/php_store/includes/header.php");
 
   include($_SERVER['DOCUMENT_ROOT']. "/php_store/includes/menu.php");

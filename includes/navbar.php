@@ -67,7 +67,7 @@
       <div class="navbar-collapse collapse right">
 
         <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
-          <!-- btn btn-primary navbar-btn Begin -->
+
 
           <span class="sr-only">Toggle Search</span>
 

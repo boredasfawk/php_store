@@ -125,7 +125,7 @@
           </ul>
         </div>
 
-        <a href="cart.php" class="btn navbar-btn btn-primary right">
+        <a href="tabs/cart.php" class="btn navbar-btn btn-primary right">
 
           <i class="fa fa-shopping-cart"></i>
 
