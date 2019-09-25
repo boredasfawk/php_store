@@ -207,9 +207,9 @@
                 
                 echo "
                 
-                <div class='item active'>
+                <div  class='item active'>
                 
-                <img src='admin_area/slides_images/$slide_image'>
+                <img id='carousel' src='admin_area/slides_images/$slide_image'>
                 
                 </div>
                 
@@ -230,7 +230,7 @@
                 
                 <div class='item'>
                 
-                <img src='admin_area/slides_images/$slide_image'>
+                <img id='carousel' src='admin_area/slides_images/$slide_image'>
                 
                 </div>
                 
