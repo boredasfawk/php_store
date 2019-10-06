@@ -2,12 +2,13 @@
   $title = 'Insert Products';
   
   include("includes/db.php");
-
   include($_SERVER['DOCUMENT_ROOT']. "/php_store/includes/header.php");
   include("includes/admin_navbar.php");
-
 ?>
 
+<!-- TODO:  Add better error handling on form data instead of mysqli_error
+           Add prepared statements to prevent sql injections *mysqli_prepare*
+-->
 
 <div class="row">
 
@@ -20,12 +21,9 @@
         <i class="fa fa-dashboard"></i> Dashboard / Insert Products
 
       </li>
-
     </ol>
     <!-- breadcrumb Finish -->
-
   </div>
-
 </div>
 
 <!-- Admin_Prod_Insert Begin -->
@@ -67,7 +65,7 @@
 
               <select name="product_cat" class="form-control">
 
-                <option> Select a Category Product </option>
+                <option> Select a Product Category </option>
 
                 <!-- DB_Product_Cat Begin -->
                 <?php 
@@ -89,10 +87,8 @@
                     
                     <option value='$p_cat_id'> $p_cat_title </option>
                     
-                    ";
-                      
-                  }
-                              
+                    ";  
+                  }             
                 ?>
                 <!-- DB_Product_Cat Finish -->
               </select>
@@ -107,7 +103,7 @@
             <div class="col-md-6">
 
 
-              <select name="product_cat" class="form-control">
+              <select name="cat" class="form-control">
 
 
                 <option> Select a Category </option>
@@ -122,7 +118,6 @@
                   $get_cat = "select * from categories";
                   $run_cat = mysqli_query($con,$get_cat);
                   
-                  
                   while ($row_cat=mysqli_fetch_array($run_cat)){
                     // on each iteration put string held in id/title into variable
                     // show each variable in an option tag on page
@@ -133,10 +128,8 @@
                     
                     <option value='$cat_id'> $cat_title </option>
                     
-                    ";
-                      
-                  }
-                              
+                    ";                 
+                  }            
                 ?>
                 <!-- DB_Cat Finish -->
               </select>
@@ -263,9 +256,9 @@ tinymce.init({
   // run query string to upload form into db and return true into variable
   // check query returned true
   // send an alert that upload is successful then reload page
+  // if error in form kills program and logs error
 
-  if(isset($_POST['submit'])) {
-      
+  if(isset($_POST['submit'])) {  
     $product_title = $_POST['product_title'];
     $product_cat = $_POST['product_cat'];
     $cat = $_POST['cat'];
@@ -284,19 +277,14 @@ tinymce.init({
     move_uploaded_file($temp_name1,"product_images/$product_img1");
     move_uploaded_file($temp_name2,"product_images/$product_img2");
     move_uploaded_file($temp_name3,"product_images/$product_img3");
-    
+     
     $insert_product = "insert into products (p_cat_id,cat_id,date,product_title,product_img1,product_img2,product_img3,product_price,product_keywords,product_desc) values ('$product_cat','$cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','$product_keywords','$product_desc')";
+    $run_product = mysqli_query($con,$insert_product) or die ('Error updating database: '.mysqli_error($con));
     
-    $run_product = mysqli_query($con,$insert_product);
-    
-    if($run_product) {
-        
+    if($run_product) {  
       echo "<script>alert('Product has been inserted sucessfully')</script>";
       echo "<script>window.open('insert_product.php','_self')</script>";
-      
-    }
-      
+    }     
   }
-
 ?>
 <!-- Php_insert_function Finish -->
