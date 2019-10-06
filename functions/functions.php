@@ -11,11 +11,11 @@ function getPro(){
     // ..until mysqli_fetch_array hits end of results and returns null
     global $db;
     
-    $get_products = "select * from products order by 1 DESC LIMIT 0,8";
+    $get_products = "select * from products order by 1 DESC LIMIT 0,9";
     
     $run_products = mysqli_query($db,$get_products);
     
-    while($row_products=mysqli_fetch_array($run_products)){
+    while($row_products=mysqli_fetch_array($run_products)) {
         // on each iteration put string held in id/title/price/product_img into variable
         // return html that shows each variable on the page
         $pro_id = $row_products['product_id'];
@@ -32,7 +32,7 @@ function getPro(){
         
             <div class='product'>
             
-                <a href='details.php?pro_id=$pro_id'>
+                <a href='tabs/details.php?pro_id=$pro_id'>
                 
                     <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
                 
@@ -42,7 +42,7 @@ function getPro(){
                 
                     <h3>
             
-                        <a href='details.php?pro_id=$pro_id'>
+                        <a href='tabs/details.php?pro_id=$pro_id'>
 
                             $pro_title
 
@@ -52,19 +52,19 @@ function getPro(){
                     
                     <p class='price'>
                     
-                        $ $pro_price
+                         $pro_price
                     
                     </p>
                     
                     <p class='button'>
                     
-                        <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
+                        <a class='btn btn-default' href='tabs/details.php?pro_id=$pro_id'>
 
                             View Details
 
                         </a>
                     
-                        <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
+                        <a class='btn btn-primary' href='tabs/details.php?pro_id=$pro_id'>
 
                             <i class='fa fa-shopping-cart'></i> Add to Cart
 

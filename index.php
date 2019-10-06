@@ -1,7 +1,7 @@
 <?php 
 
   include("includes/db.php");
-
+  include("functions/functions.php");
 ?>
 
 
@@ -195,11 +195,16 @@
         <div class="carousel-inner">
           <!-- Dynamic-Carousel Begin -->
           <?php 
-            
+            // put query string that selects table from db into variable
+            // put query function that connects php to db into variable
+            // put db row into an array then into a variable
+            // loop throw array and output variables into options tag.. 
+            // ..until mysqli_fetch_array hits end of results and returns null
             $get_slides = "select * from slider LIMIT 0,1";
             
             $run_slides = mysqli_query($con,$get_slides);
-            
+            // on each iteration put string held in slide_name/slide_image into variable
+            // return html that shows each variable on the page            
             while($row_slides=mysqli_fetch_array($run_slides)){
                 
                 $slide_name = $row_slides['slide_name'];
@@ -216,7 +221,7 @@
                 ";
                 
             }
-            
+            // repeat of previous code but for different row
             $get_slides = "select * from slider LIMIT 1,3";
             
             $run_slides = mysqli_query($con,$get_slides);
@@ -344,290 +349,16 @@
     </div>
   </div>
 
-  <!-- New-Products-Content Begin -->
+
   <div id="content" class="container">
 
     <div class="row">
-
-      <div class="col-sm-4 col-sm-6 single">
-
-        <div class="product">
-
-          <a href="tabs/details.php">
-
-            <img class="img-responsive" src="admin_area/product_images/product-women-5.jpeg" alt="Product 1">
-
-          </a>
-
-          <div class="text">
-
-            <h3>
-              <a href="tabs/details.php">
-                Woman T-Shirt
-              </a>
-            </h3>
-
-            <p class="price">$30</p>
-
-            <p class="button">
-
-              <a href="tabs/details.php" class="btn btn-default">View Details</a>
-
-              <a href="tabs/details.php" class="btn btn-primary">
-
-                <i class="fa fa-shopping-cart">
-                  Add To Cart
-                </i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-6 single">
-
-        <div class="product">
-
-          <a href="tabs/details.php">
-
-            <img class="img-responsive" src="admin_area/product_images/product-men-1.jpeg" alt="Product 2">
-
-          </a>
-
-          <div class="text">
-
-            <h3>
-              <a href="tabs/details.php">
-                Man T-Shirt
-              </a>
-            </h3>
-
-            <p class="price">$30</p>
-
-            <p class="button">
-
-              <a href="tabs/details.php" class="btn btn-default">View Details</a>
-
-              <a href="tabs/details.php" class="btn btn-primary">
-
-                <i class="fa fa-shopping-cart">
-                  Add To Cart
-                </i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-6 single">
-
-        <div class="product">
-
-          <a href="tabs/details.php">
-
-            <img class="img-responsive" src="admin_area/product_images/product-women-2.jpeg" alt="Product 3">
-
-          </a>
-
-          <div class="text">
-
-            <h3>
-              <a href="tabs/details.php">
-                Woman T-Shirt
-              </a>
-            </h3>
-
-            <p class="price">$30</p>
-
-            <p class="button">
-
-              <a href="tabs/details.php" class="btn btn-default">View Details</a>
-
-              <a href="tabs/details.php" class="btn btn-primary">
-
-                <i class="fa fa-shopping-cart">
-                  Add To Cart
-                </i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-6 single">
-
-        <div class="product">
-
-          <a href="tabs/details.php">
-
-            <img class="img-responsive" src="admin_area/product_images/product-men-2.jpeg" alt="Product 4">
-
-          </a>
-
-          <div class="text">
-
-            <h3>
-              <a href="tabs/details.php">
-                Man T-Shirt
-              </a>
-            </h3>
-
-            <p class="price">$30</p>
-
-            <p class="button">
-
-              <a href="tabs/details.php" class="btn btn-default">View Details</a>
-
-              <a href="tabs/details.php" class="btn btn-primary">
-
-                <i class="fa fa-shopping-cart">
-                  Add To Cart
-                </i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-6 single">
-
-        <div class="product">
-
-          <a href="tabs/details.php">
-
-            <img class="img-responsive" src="admin_area/product_images/product-men-3.jpeg" alt="Product 5">
-
-          </a>
-
-          <div class="text">
-
-            <h3>
-              <a href="tabs/details.php">
-                Man T-Shirt
-              </a>
-            </h3>
-
-            <p class="price">$30</p>
-
-            <p class="button">
-
-              <a href="tabs/details.php" class="btn btn-default">View Details</a>
-
-              <a href="tabs/details.php" class="btn btn-primary">
-
-                <i class="fa fa-shopping-cart">
-                  Add To Cart
-                </i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-6 single">
-
-        <div class="product">
-
-          <a href="tabs/details.php">
-
-            <img class="img-responsive" src="admin_area/product_images/product-women-3.jpeg" alt="Product 6">
-
-          </a>
-
-          <div class="text">
-
-            <h3>
-              <a href="tabs/details.php">
-                Woman T-Shirt
-              </a>
-            </h3>
-
-            <p class="price">$30</p>
-
-            <p class="button">
-
-              <a href="tabs/details.php" class="btn btn-default">View Details</a>
-
-              <a href="tabs/details.php" class="btn btn-primary">
-
-                <i class="fa fa-shopping-cart">
-                  Add To Cart
-                </i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-6 single">
-
-        <div class="product">
-
-          <a href="tabs/details.php">
-
-            <img class="img-responsive" src="admin_area/product_images/product-men-4.jpeg" alt="Product 7">
-
-          </a>
-
-          <div class="text">
-
-            <h3>
-              <a href="tabs/details.php">
-                Man T-Shirt
-              </a>
-            </h3>
-
-            <p class="price">$30</p>
-
-            <p class="button">
-
-              <a href="tabs/details.php" class="btn btn-default">View Details</a>
-
-              <a href="tabs/details.php" class="btn btn-primary">
-
-                <i class="fa fa-shopping-cart">
-                  Add To Cart
-                </i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-6 single">
-
-        <div class="product">
-
-          <a href="tabs/details.php">
-
-            <img class="img-responsive" src="admin_area/product_images/product-women-4.jpeg" alt="Product 8">
-
-          </a>
-
-          <div class="text">
-
-            <h3>
-              <a href="tabs/details.php">
-                Woman T-Shirt
-              </a>
-            </h3>
-
-            <p class="price">$30</p>
-
-            <p class="button">
-
-              <a href="tabs/details.php" class="btn btn-default">View Details</a>
-
-              <a href="tabs/details.php" class="btn btn-primary">
-
-                <i class="fa fa-shopping-cart">
-                  Add To Cart
-                </i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
+      <!-- New-Products-Content Begin -->
+      <?php 
+        // calls function to provide newest products added to db up to 9
+        getPro();
+
+      ?>
       <!-- New-Products-Content Finish -->
     </div>
   </div>
