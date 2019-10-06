@@ -108,19 +108,29 @@
           <ul class="nav navbar-nav left">
 
             <li class="active">
+
               <a href="index.php">Home</a>
+
             </li>
             <li>
+
               <a href="tabs/shop.php">Shop</a>
+
             </li>
             <li>
+
               <a href="customer_area/my_account.php">My Account</a>
+
             </li>
             <li>
+
               <a href="tabs/cart.php">Shopping Cart</a>
+
             </li>
             <li>
+
               <a href="tabs/contact.php">Contact Us</a>
+
             </li>
           </ul>
         </div>
@@ -201,8 +211,8 @@
             // loop throw array and output variables into options tag.. 
             // ..until mysqli_fetch_array hits end of results and returns null
             $get_slides = "select * from slider LIMIT 0,1";
-            
             $run_slides = mysqli_query($con,$get_slides);
+
             // on each iteration put string held in slide_name/slide_image into variable
             // return html that shows each variable on the page            
             while($row_slides=mysqli_fetch_array($run_slides)){
@@ -216,14 +226,12 @@
                 
                 <img id='carousel' src='admin_area/slides_images/$slide_image'>
                 
-                </div>
-                
-                ";
-                
+                </div>          
+                ";  
             }
+
             // repeat of previous code but for different row
             $get_slides = "select * from slider LIMIT 1,3";
-            
             $run_slides = mysqli_query($con,$get_slides);
             
             while($row_slides=mysqli_fetch_array($run_slides)){
@@ -237,12 +245,9 @@
                 
                 <img id='carousel' src='admin_area/slides_images/$slide_image'>
                 
-                </div>
-                
-                ";
-                
-            }
-            
+                </div> 
+                "; 
+            } 
           ?>
         </div>
         <!-- Dynamic-Carousel Finish -->
@@ -374,10 +379,26 @@
           <h4>Pages</h4>
 
           <ul>
-            <li><a href="tabs/cart.php">Shopping Cart</a></li>
-            <li><a href="tabs/contact.php">Contact Us</a></li>
-            <li><a href="tabs/shop.php">Shop</a></li>
-            <li><a href="customer_area/my_account.php">My Account</a></li>
+            <li>
+
+              <a href="tabs/cart.php">Shopping Cart</a>
+
+            </li>
+            <li>
+
+              <a href="tabs/contact.php">Contact Us</a>
+
+            </li>
+            <li>
+
+              <a href="tabs/shop.php">Shop</a>
+
+            </li>
+            <li>
+
+              <a href="customer_area/my_account.php">My Account</a>
+
+            </li>
           </ul>
 
           <hr>
@@ -385,8 +406,16 @@
           <h4>User Section</h4>
 
           <ul>
-            <li><a href="tabs/login.php">Login</a></li>
-            <li><a href="tabs/customer_register.php">Register</a></li>
+            <li>
+
+              <a href="tabs/login.php">Login</a>
+
+            </li>
+            <li>
+
+              <a href="tabs/customer_register.php">Register</a>
+
+            </li>
           </ul>
 
           <hr class="hidden-md hidden-lg hidden-sm">
@@ -398,11 +427,34 @@
           <h4>Top Products Categories</h4>
 
           <ul>
-            <li><a href="#">Jackets</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Coats</a></li>
-            <li><a href="#">Shoes</a></li>
-            <li><a href="#">T-Shirts</a></li>
+            <?php   
+              // put query string that selects table from db into variable
+              // put query function that connects php to db into variable
+              // put db row into an array then into a variable
+              // loop throw array and output variables into options tag.. 
+              // ..until mysqli_fetch_array hits end of results and returns null      
+              $get_p_cats = "select * from product_categories";
+              $run_p_cats = mysqli_query($con,$get_p_cats);
+          
+              while($row_p_cats=mysqli_fetch_array($run_p_cats)){
+                // on each iteration put string held in p_cat_id/p_cat_title into variable
+                // return html that shows each variable on the page     
+                $p_cat_id = $row_p_cats['p_cat_id'];               
+                $p_cat_title = $row_p_cats['p_cat_title'];
+                
+                echo "
+                
+                  <li>
+                  
+                    <a href='shop.php?p_cat=$p_cat_id'>
+                    
+                      $p_cat_title
+                    
+                    </a>
+                  </li>
+                ";   
+              }
+            ?>
           </ul>
 
           <hr class="hidden-md hidden-lg">
@@ -437,17 +489,13 @@
             Dont miss our latest update products.
           </p>
 
-          <form action="" method="post">
-            <div class="input-group">
-
-              <input type="text" class="form-control" name="email">
-
-              <span class="input-group-btn">
-
-                <input type="submit" value="subscribe" class="btn btn-default">
-
-              </span>
-            </div>
+          <form style="border:1px solid #ccc;padding:3px;text-align:center;"
+            action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow"
+            onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=olonnye', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+            <p>Enter your email address:</p>
+            <p><input type="text" style="width:140px" name="email" /></p><input type="hidden" value="olonnye"
+              name="uri" /><input type="hidden" name="loc" value="en_US" /><input type="submit" value="Subscribe" />
+            <p>Delivered by <a href="https://feedburner.google.com" target="_blank">FeedBurner</a></p>
           </form>
 
           <hr>
