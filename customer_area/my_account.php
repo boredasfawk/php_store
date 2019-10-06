@@ -43,7 +43,7 @@
       <div class="box">
 
         <?php
-               
+          // check if my_orders is in url param, if true includes my_orders page  
           if (isset($_GET['my_orders'])){
             include("my_orders.php");
           }

@@ -122,6 +122,8 @@
                     <select name="product_qty" id="" class="form-control">
 
                       <?php
+                        // loops through integer 0-100 
+                        // each loop puts integer in option tag
                         for ($i=0; $i<=100; $i++) {
                       ?>
                       <option value="<?php echo $i;?>"><?php echo $i;?></option>

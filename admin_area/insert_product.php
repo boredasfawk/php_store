@@ -71,12 +71,17 @@
 
                 <!-- DB_Product_Cat Begin -->
                 <?php 
-                              
+                  // put query string that selects table from db into variable
+                  // put query function that connects php to db into variable
+                  // put db row into an array then into a variable
+                  // loop throw array and output variables into options tag.. 
+                  // ..until mysqli_fetch_array hits end of results and returns null
                   $get_p_cats = "select * from product_categories";
                   $run_p_cats = mysqli_query($con,$get_p_cats);
-                  
-                  while ($row_p_cats=mysqli_fetch_array($run_p_cats)){
-                      
+
+                  while ($row_p_cats=mysqli_fetch_array($run_p_cats)) {
+                    // on each iteration put string held in id/title into variable
+                    // show each variable in an option tag on page
                     $p_cat_id = $row_p_cats['p_cat_id'];
                     $p_cat_title = $row_p_cats['p_cat_title'];
                     
@@ -109,12 +114,18 @@
 
                 <!-- DB_Cat Begin -->
                 <?php 
-                              
+                  // put query string that selects table from db into variable
+                  // put query function that connects php to db into variable
+                  // put db row into an array then into a variable
+                  // loop throw array and output variables into options tag.. 
+                  // ..until mysqli_fetch_array hits end of results and returns null         
                   $get_cat = "select * from categories";
                   $run_cat = mysqli_query($con,$get_cat);
                   
+                  
                   while ($row_cat=mysqli_fetch_array($run_cat)){
-                      
+                    // on each iteration put string held in id/title into variable
+                    // show each variable in an option tag on page
                     $cat_id = $row_cat['cat_id'];
                     $cat_title = $row_cat['cat_title'];
                     
@@ -245,6 +256,13 @@ tinymce.init({
 
 <!-- Php_insert_function Begin -->
 <?php 
+  // checks if form is submit
+  // gets descriptions and files from form
+  // move upload files into into product_images folder in admin area
+  // make query string to insert product descriptions and files into db then put into variable
+  // run query string to upload form into db and return true into variable
+  // check query returned true
+  // send an alert that upload is successful then reload page
 
   if(isset($_POST['submit'])) {
       

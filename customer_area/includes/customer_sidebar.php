@@ -3,7 +3,7 @@
 
   <div class="panel-heading">
 
-    <!-- TODO: Get Working For Long Tern Goal -->
+    <!-- TODO: Get Working For Long Term Goal -->
     <!-- <center>
   
       <img src="customer_images/olonnye.jpg" alt="Mdev Profile">
@@ -24,7 +24,7 @@
 
 
     <ul class="nav-pills nav-stacked nav">
-
+      <!-- check if my_orders is in url params return an active string to class attr -->
       <li class="<?php if(isset($_GET['my_orders'])){ echo "active"; } ?>">
 
         <a href="my_account.php?my_orders">
@@ -34,7 +34,7 @@
         </a>
 
       </li>
-
+      <!-- check if pay_offline is in url params return an active string to class attr -->
       <li class="<?php if(isset($_GET['pay_offline'])){ echo "active"; } ?>">
 
         <a href="my_account.php?pay_offline">
@@ -44,7 +44,7 @@
         </a>
 
       </li>
-
+      <!-- check if edit_account is in url params return an active string to class attr -->
       <li class="<?php if(isset($_GET['edit_account'])){ echo "active"; } ?>">
 
         <a href="my_account.php?edit_account">
@@ -54,7 +54,7 @@
         </a>
 
       </li>
-
+      <!-- check if change_pass is in url params return an active string to class attr -->
       <li class="<?php if(isset($_GET['change_pass'])){ echo "active"; } ?>">
 
         <a href="my_account.php?change_pass">
@@ -64,7 +64,7 @@
         </a>
 
       </li>
-
+      <!-- check if delete_account is in url params return an active string to class attr -->
       <li class="<?php if(isset($_GET['delete_account'])){ echo "active"; } ?>">
 
         <a href="my_account.php?delete_account">
