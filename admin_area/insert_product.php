@@ -2,12 +2,12 @@
   $title = 'Insert Products';
   
   include("includes/db.php");
-
   include($_SERVER['DOCUMENT_ROOT']. "/php_store/includes/header.php");
   include("includes/admin_navbar.php");
 
 ?>
 
+<!-- TODO:  Add better error handling on form data instead of mysqli_error-->
 
 <div class="row">
 
@@ -67,7 +67,7 @@
 
               <select name="product_cat" class="form-control">
 
-                <option> Select a Category Product </option>
+                <option> Select a Product Category </option>
 
                 <!-- DB_Product_Cat Begin -->
                 <?php 
@@ -107,7 +107,7 @@
             <div class="col-md-6">
 
 
-              <select name="product_cat" class="form-control">
+              <select name="cat" class="form-control">
 
 
                 <option> Select a Category </option>
@@ -284,29 +284,17 @@ tinymce.init({
     move_uploaded_file($temp_name1,"product_images/$product_img1");
     move_uploaded_file($temp_name2,"product_images/$product_img2");
     move_uploaded_file($temp_name3,"product_images/$product_img3");
-
-    if(move_uploaded_file($temp_name1,"product_images/$product_img1")){
-      echo "true";
-    } else {
-      echo "false";
-    }
      
     $insert_product = "insert into products (p_cat_id,cat_id,date,product_title,product_img1,product_img2,product_img3,product_price,product_keywords,product_desc) values ('$product_cat','$cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','$product_keywords','$product_desc')";
     
-    $run_product = mysqli_query($con,$insert_product);
-    if($run_product){
-      echo "true";
-    } else {
-      echo "false";
-    }
+    $run_product = mysqli_query($con,$insert_product) or die ('Error updating database: '.mysqli_error($con));
+    
     
     if($run_product) {
         
       echo "<script>alert('Product has been inserted sucessfully')</script>";
-      // echo "<script>window.open('insert_product.php','_self')</script>";
-      
-    }
-      
+      echo "<script>window.open('insert_product.php','_self')</script>";
+    }     
   }
 
 ?>
