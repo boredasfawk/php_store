@@ -1,5 +1,6 @@
 <?php 
   $title = 'Shop';
+  $active = 'shop';
   
   include __DIR__ . "/../includes/header.php" ;
   

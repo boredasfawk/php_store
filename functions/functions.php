@@ -2,6 +2,7 @@
 // put db connection function that connects php to db into variable
 $db = mysqli_connect("localhost","ADMIN","admin","ecom_store");
 
+// get product function start
 function getPro(){
     // put db variable into global scope
     // put query string that selects table from db into variable
@@ -83,5 +84,5 @@ function getPro(){
     }
     
 }
-
+// get product function finish
 ?>

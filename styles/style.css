@@ -275,7 +275,8 @@ img#carousel {
   text-align: center;
   text-transform: uppercase;
 }
-#content {
+
+[id="content"] {
   padding-left: 8vmin;
   margin: 0 auto;
 }
@@ -437,7 +438,7 @@ div.col-md-12.details {
 
 @media (max-width: 768px) {
   div#content.cart {
-    padding-left: 0;
+    padding-left: 0 !important;
   }
   div#cart.box-header {
     margin: -1vmin -1.5vmin 5.5vmin 0.5vmin;
@@ -464,6 +465,10 @@ div.col-md-12.details {
 /*  DETAILS PAGE FINISH*/
 
 /* CART PAGE BEGIN */
+
+div#content.cart {
+  padding-left: inherit !important;
+}
 
 #content #cart .table tbody tr td img {
   width: 5vw;
@@ -557,8 +562,8 @@ div.col-md-12.details {
   margin: 0 1vmin 0 0;
   display: inline-block;
   color: #ffffff;
-  width: 5vmax;
-  height: 6vmin;
+  width: 3vmax;
+  height: 5vmin;
   border-radius: 2rem;
   line-height: 3rem;
   font-size: 1.4rem;

@@ -1,5 +1,6 @@
 <?php
   $title = 'My Account';
+  $active = 'my_account';
   
   include($_SERVER['DOCUMENT_ROOT']. "/php_store/includes/header.php");
 

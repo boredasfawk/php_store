@@ -37,18 +37,23 @@
 
         <ul class="nav navbar-nav left">
 
-          <li class="active">
+          <li class="<?php if($active=='home') echo"active"; ?>">
+
             <a href="../index.php">Home</a>
           </li>
-          <li>
+          <li class="<?php if($active=='shop') echo"active"; ?>">
+
             <a href="../tabs/shop.php">Shop</a>
           </li>
-          <li>
+          <li class="<?php if($active=='my_account') echo"active"; ?>">
+
             <a href="../customer_area/my_account.php">My Account</a>
           </li>
-          <li>
+          <li class="<?php if($active=='cart') echo"active"; ?>">
+
             <a href="../tabs/cart.php">Shopping Cart</a> </li>
-          <li>
+          <li class="<?php if($active=='contact') echo"active"; ?>">
+
             <a href="../tabs/contact.php">Contact Us</a>
           </li>
         </ul>
