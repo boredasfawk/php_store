@@ -5,7 +5,7 @@ $db = mysqli_connect("localhost","ADMIN","admin","ecom_store");
 // get product function start
 function getPro(){
   // put db variable into global scope
-  // put query string that selects table from db into variable
+  // put query string that selects table from db and limits rows to first 9 into variable
   // put query function that connects php to db into variable
   // put db row into an array then into a variable
   // loop throw array and output variables into options tag.. 
@@ -80,7 +80,12 @@ function getPro(){
 // get product categories function start 
 
 function getPCats(){
-    
+  // put db variable into global scope
+  // put query string that selects table from db into variable
+  // put query function that connects php to db into variable
+  // put db row into an array then into a variable
+  // loop throw array and output variables into options tag.. 
+  // ..until mysqli_fetch_array hits end of results and returns null
   global $db;
   
   $get_p_cats = "select * from product_categories";
@@ -88,7 +93,8 @@ function getPCats(){
   $run_p_cats = mysqli_query($db,$get_p_cats);
   
   while($row_p_cats=mysqli_fetch_array($run_p_cats)){
-      
+    // on each iteration put string held in id/title into variable
+    // return html that shows each variable on the page  
     $p_cat_id = $row_p_cats['p_cat_id'];
     
     $p_cat_title = $row_p_cats['p_cat_title'];
@@ -109,7 +115,12 @@ function getPCats(){
 // get categories function start 
 
 function getCats(){
-  
+  // put db variable into global scope
+  // put query string that selects table from db into variable
+  // put query function that connects php to db into variable
+  // put db row into an array then into a variable
+  // loop throw array and output variables into options tag.. 
+  // ..until mysqli_fetch_array hits end of results and returns null
   global $db;
   
   $get_cats = "select * from categories";
@@ -117,7 +128,8 @@ function getCats(){
   $run_cats = mysqli_query($db,$get_cats);
   
   while($row_cats=mysqli_fetch_array($run_cats)){
-      
+    // on each iteration put string held in id/title into variable
+    // return html that shows each variable on the page    
     $cat_id = $row_cats['cat_id'];
     
     $cat_title = $row_cats['cat_title'];
@@ -136,11 +148,19 @@ function getCats(){
 // get categories function finish 
 
 // get products from a product category function start 
-
 function getpcatpro(){
   
   global $db;
-  
+  // checks if p_cat is set 
+  // puts cat id into variable
+  // put query string that get all rows from product_categories that matches cat id into variable
+  // put query string that selects table from db into variable
+  // put query function that connects php to db into variable
+  // put db row into an array then into a variable
+  // put string held in p_cat_desc/p_cat_title into variable
+  // put query string that get all rows from product that matches cat id into variable
+  // put query string that selects table from db into variable
+  // put number of rows in table into variable
   if(isset($_GET['p_cat'])){
       
     $p_cat_id = $_GET['p_cat'];
@@ -160,7 +180,9 @@ function getpcatpro(){
     $run_products = mysqli_query($db,$get_products);
     
     $count = mysqli_num_rows($run_products);
-    
+  
+    // if number of rows is equal to 0 return "none found" response
+    // if number of rows greater than 0 return products in row
     if($count==0){
         
       echo "
@@ -184,9 +206,12 @@ function getpcatpro(){
         </div>
       ";
     }
-    
+
+    // loop throw array and output variables into options tag.. 
+    // ..until mysqli_fetch_array hits end of results and returns null
     while($row_products=mysqli_fetch_array($run_products)){
-        
+      // on each iteration put string held in Product_id/title/price/img into variable
+      // return html that shows each variable on the page  
       $pro_id = $row_products['product_id'];
   
       $pro_title = $row_products['product_title'];
