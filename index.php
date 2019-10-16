@@ -446,7 +446,7 @@
                 
                   <li>
                   
-                    <a href='shop.php?p_cat=$p_cat_id'>
+                    <a href='tabs/shop.php?p_cat=$p_cat_id'>
                     
                       $p_cat_title
                     
