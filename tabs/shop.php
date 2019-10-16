@@ -45,7 +45,8 @@
 
     <div class="col-md-9">
       <?php 
-                
+        // checks if p_cat/cat is declared
+        // returns html if true
         if(!isset($_GET['p_cat'])){  
           if(!isset($_GET['cat'])){
     
@@ -64,9 +65,18 @@
       <!-- Shop-Product Begin -->
       <div class="row">
         <?php 
-                   
-          if(!isset($_GET['p_cat'])){
-              
+          // checks if p_cat/cat is declared  
+          // sets limit of items per page
+          // checks if a current page is declared then puts it into a var...
+          // ...if not then sets it to first page
+          // zero indexs current page and multiplies by amount per page... 
+          // ...to find first product to start from then put its into a variable
+          // put query string for db into a variable
+          // put query function that connects php to db into variable 
+          // put db row into an array then into a variable
+          // loop throw array and output variables into html.. 
+          // ..until mysqli_fetch_array hits end of results and returns null
+          if(!isset($_GET['p_cat'])){ 
             if(!isset($_GET['cat'])){
                 
               $per_page=6; 
@@ -88,7 +98,8 @@
               $run_products = mysqli_query($con,$get_products);
               
               while($row_products=mysqli_fetch_array($run_products)){
-                  
+                // on each iteration put string held in product_id/title/price/img into variable
+                // return html that shows each variable on the page     
                 $pro_id = $row_products['product_id'];
 
                 $pro_title = $row_products['product_title'];
@@ -149,7 +160,15 @@
         <ul class="pagination">
           <!-- pagination Begin -->
           <?php
-                        
+            // put query string that get all rows from product that matches cat id into variable
+            // put query string that selects table from db into variable
+            // put number of rows in table into variable  
+            // rounds the number of rows divided... 
+            // ...by the amount of items per page then puts it into a variable
+            // returns html for first page
+            // loops thru possible pages up to int in total_pages variable...
+            // ...while return html on each iteration   
+            // returns html for last page       
             $query = "select * from products";
                     
             $result = mysqli_query($con,$query);

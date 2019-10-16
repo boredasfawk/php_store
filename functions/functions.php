@@ -8,7 +8,7 @@ function getPro(){
   // put query string that selects table from db and limits rows to first 9 into variable
   // put query function that connects php to db into variable
   // put db row into an array then into a variable
-  // loop throw array and output variables into options tag.. 
+  // loop throw array and output variables into html.. 
   // ..until mysqli_fetch_array hits end of results and returns null
   global $db;
   
@@ -84,7 +84,7 @@ function getPCats(){
   // put query string that selects table from db into variable
   // put query function that connects php to db into variable
   // put db row into an array then into a variable
-  // loop throw array and output variables into options tag.. 
+  // loop throw array and output variables into html.. 
   // ..until mysqli_fetch_array hits end of results and returns null
   global $db;
   
@@ -119,7 +119,7 @@ function getCats(){
   // put query string that selects table from db into variable
   // put query function that connects php to db into variable
   // put db row into an array then into a variable
-  // loop throw array and output variables into options tag.. 
+  // loop throw array and output variables into html.. 
   // ..until mysqli_fetch_array hits end of results and returns null
   global $db;
   
@@ -207,7 +207,7 @@ function getpcatpro(){
       ";
     }
 
-    // loop throw array and output variables into options tag.. 
+    // loop throw array and output variables into html.. 
     // ..until mysqli_fetch_array hits end of results and returns null
     while($row_products=mysqli_fetch_array($run_products)){
       // on each iteration put string held in Product_id/title/price/img into variable
