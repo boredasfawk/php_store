@@ -155,10 +155,9 @@ function getpcatpro(){
   // puts cat id into variable
   // put query string that get all rows from product_categories that matches cat id into variable
   // put query string that selects table from db into variable
-  // put query function that connects php to db into variable
   // put db row into an array then into a variable
   // put string held in p_cat_desc/p_cat_title into variable
-  // put query string that get all rows from product that matches cat id into variable
+  // put query string that get alls rows from product that matches product category id into variable
   // put query string that selects table from db into variable
   // put number of rows in table into variable
   if(isset($_GET['p_cat'])){

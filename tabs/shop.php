@@ -215,6 +215,8 @@
         </ul>
       </center>
       <?php 
+        // checks for toggled product category or category in url params
+        // then loads items based on those url params
         getpcatpro(); 
         getcatpro();
       ?>
