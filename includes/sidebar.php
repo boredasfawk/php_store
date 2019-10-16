@@ -1,3 +1,5 @@
+<!-- TODO: Refactor href links -->
+
 <!-- Sidebar Start -->
 <div class="panel panel-default sidebar-menu">
   <div class="panel-heading">
