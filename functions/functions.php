@@ -275,116 +275,131 @@ function getpcatpro(){
 // get category product function start 
 
 function getcatpro(){
-    
+
+  // put db variable into global scope 
+  // checks if cat is declared
+  // if true puts cat id into a variable
+  // put query string that get all rows from categories that matches cat id into variable
+  // put query string that selects table from db into variable
+  // put query function that connects php to db into variable
+  // put db row into an array then into a variable
+  // put string held in cat_title/cat_desc into variable
+  // put query string that get all rows from product that matches cat id into variable
+  // put query string that selects table from db into variable
+  // put number of rows in table into variable
   global $db;
   
   if(isset($_GET['cat'])){
       
-      $cat_id = $_GET['cat'];
-      
-      $get_cat = "select * from categories where cat_id='$cat_id'";
-      
-      $run_cat = mysqli_query($db,$get_cat);
-      
-      $row_cat = mysqli_fetch_array($run_cat);
-      
-      $cat_title = $row_cat['cat_title'];
-      
-      $cat_desc = $row_cat['cat_desc'];
-      
-      $get_cat = "select * from products where cat_id='$cat_id'";
-      
-      $run_products = mysqli_query($db,$get_cat);
-      
-      $count = mysqli_num_rows($run_products);
-      
-      if($count==0){
-          
-          
-          echo "
-          
-              <div class='box'>
-              
-                  <h1> No Product Found In This Category </h1>
-              
-              </div>
-          ";
-      }else{
-          
-          echo "
-          
-              <div class='box'>
-              
-                  <h1> $cat_title </h1>
-                  
-                  <p> $cat_desc </p>
-              
-              </div>
-          ";
-      }
-      
-      while($row_products=mysqli_fetch_array($run_products)){
-          
-          $pro_id = $row_products['product_id'];
-          
-          $pro_title = $row_products['product_title'];
-          
-          $pro_price = $row_products['product_price'];
-          
-          $pro_desc = $row_products['product_desc'];
-          
-          $pro_img1 = $row_products['product_img1'];
-          
-          echo "
-          
-              <div class='col-md-4 col-sm-6 center-responsive'>
-                                  
-                  <div class='product'>
-                                      
-                      <a href='details.php?pro_id=$pro_id'>
-                                          
-                          <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
-                                          
-                      </a>
-                                          
-                      <div class='text'>
-                                          
-                          <h3>
-                                              
-                              <a href='details.php?pro_id=$pro_id'> $pro_title </a>
-                                              
-                          </h3>
-                                          
-                      <p class='price'>
+    $cat_id = $_GET['cat'];
+    
+    $get_cat = "select * from categories where cat_id='$cat_id'";
+    
+    $run_cat = mysqli_query($db,$get_cat);
+    
+    $row_cat = mysqli_fetch_array($run_cat);
+    
+    $cat_title = $row_cat['cat_title'];
+    
+    $cat_desc = $row_cat['cat_desc'];
+    
+    $get_cat = "select * from products where cat_id='$cat_id'";
+    
+    $run_products = mysqli_query($db,$get_cat);
+    
+    $count = mysqli_num_rows($run_products);
 
-                          $$pro_price
+    // if number of rows is equal to 0 return "none found" response
+    // if number of rows greater than 0 return products in row
+    if($count==0){
+          
+      echo "
+      
+        <div class='box'>
+        
+          <h1> No Product Found In This Category </h1>
+        
+        </div>
+      ";
+    }else{
+        
+      echo "
+      
+        <div class='box'>
+        
+          <h1> $cat_title </h1>
+          
+          <p> $cat_desc </p>
+        
+        </div>
+      ";
+    }
+    
+    // loop throw array and output variables into html.. 
+    // ..until mysqli_fetch_array hits end of results and returns null
+    while($row_products=mysqli_fetch_array($run_products)){
 
-                      </p>
-
-                          <p class='buttons'>
-
-                              <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
-
-                              View Details
-
-                              </a>
-
-                              <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
-
-                              <i class='fa fa-shopping-cart'></i> 
+      // on each iteration put string held in id/title into variable
+      // return html that shows each variable on the page 
+      $pro_id = $row_products['product_id'];
+      
+      $pro_title = $row_products['product_title'];
+      
+      $pro_price = $row_products['product_price'];
+      
+      $pro_desc = $row_products['product_desc'];
+      
+      $pro_img1 = $row_products['product_img1'];
+      
+      echo "
+      
+        <div class='col-md-4 col-sm-6 center-responsive'>
+                            
+          <div class='product'>
+                              
+            <a href='details.php?pro_id=$pro_id'>
                                 
-                                Add To Cart
+              <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
+                                
+            </a>
+                                
+            <div class='text'>
+                                
+              <h3>
+                                  
+                <a href='details.php?pro_id=$pro_id'> $pro_title </a>
+                                  
+              </h3>
+                                
+            <p class='price'>
 
-                              </a>
-                          </p>              
-                      </div>              
-                  </div>              
-              </div>
-          ";   
-      }   
+              $$pro_price
+
+            </p>
+
+              <p class='buttons'>
+
+                <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
+
+                View Details
+
+                </a>
+
+                <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
+
+                <i class='fa fa-shopping-cart'></i> 
+                  
+                  Add To Cart
+
+                </a>
+              </p>              
+            </div>              
+          </div>              
+        </div>
+      ";   
+    }   
   } 
 }
-
 // get category product function finish
 
 ?>
