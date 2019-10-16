@@ -216,6 +216,7 @@
       </center>
       <?php 
         getpcatpro(); 
+        getcatpro();
       ?>
     </div>
     <!-- Shop-Product Finish -->
