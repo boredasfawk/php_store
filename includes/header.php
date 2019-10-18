@@ -1,20 +1,22 @@
 <?php
   include("../includes/db.php");
   include("../functions/functions.php");
-
+  
+  // checks if pro_id is declared as a url param
+  // if product id is declared put id into variable
+  // put query string that get all rows from products that matches product id into variable
+  // put query string that selects table from db into variable
+  // put db row into an array then into a variable
+  // put string held in product category id into variable
+  // put string held in product_title/price/desc/img1-2-3 into variable
+  // put query string that get all rows from product_categories that matches product category id into variable
+  // put query string that selects table from db into variable
+  // put number of rows in table into variable
+  // put query string that selects table from db into variable
+  // put db row into an array then into a variable
+  // put string held in p_cat_title into variable
   if(isset($_GET['pro_id'])) {
-    // If product id is declared put id into variable
-    // put query string that get all rows from products that matches product id into variable
-    // put query string that selects table from db into variable
-    // put db row into an array then into a variable
-    // put string held in product category id into variable
-    // put string held in product_title/price/desc/img1-2-3 into variable
-    // put query string that get all rows from product_categories that matches product category id into variable
-    // put query string that selects table from db into variable
-    // put number of rows in table into variable
-    // put query string that selects table from db into variable
-    // put db row into an array then into a variable
-    // put string held in p_cat_title into variable
+    
     $product_id = $_GET['pro_id'];
     
     $get_product = "select * from products where product_id='$product_id'";
