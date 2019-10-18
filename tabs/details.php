@@ -250,23 +250,28 @@
           </div>
 
           <?php 
-                   
-              $get_products = "select * from products order by 1 DESC LIMIT 0,3";
-            
-              $run_products = mysqli_query($con,$get_products);
-            
-              while($row_products=mysqli_fetch_array($run_products)){
-                  
-                $pro_id = $row_products['product_id'];
-                
-                $pro_title = $row_products['product_title'];
-                
-                $pro_img1 = $row_products['product_img1'];
-                
-                $pro_price = $row_products['product_price'];
-                
-                echo "
-                
+            // put query string that selects table from db and limits rows to first 3 into variable
+            // put query function that connects php to db into variable
+            // put db row into an array then into a variable
+            // loop throw array and output variables into html.. 
+            // ..until mysqli_fetch_array hits end of results and returns null       
+            $get_products = "select * from products order by 1 DESC LIMIT 0,3";
+          
+            $run_products = mysqli_query($con,$get_products);
+          
+            while($row_products=mysqli_fetch_array($run_products)){
+              // on each iteration put string held in product_id/title/price/img into variable
+              // return html that shows each variable on the page  
+              $pro_id = $row_products['product_id'];
+              
+              $pro_title = $row_products['product_title'];
+              
+              $pro_img1 = $row_products['product_img1'];
+              
+              $pro_price = $row_products['product_price'];
+              
+              echo "
+              
                 <div class='col-md-3 col-sm-6 center-responsive'>
                 
                   <div class='product same-height'>
@@ -286,9 +291,9 @@
                     </div>
                   </div>
                 </div>
-                ";
-               }    
-            ?>
+              ";
+            }    
+          ?>
         </div>
         <!-- Other Products Finish -->
       </div>
