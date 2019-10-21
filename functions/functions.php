@@ -425,7 +425,7 @@ function add_cart(){
   // checks if add_cart is set on url param
   // use getRealIpUser func to get user ip and put into variable
   // check post req for product quantity and size and put each into respective variable
-  // put query string that get all rows from product_categories that matches cat id into variable
+  // put query string that get all rows from cart that matches ip_add & p_id into variable
   // put query function that connects php to db into variable
   // check if rows return from db query is greater than 0
     // if true returns sends alert item has already been added and refresh window
@@ -463,7 +463,76 @@ function add_cart(){
 }
 // add product to cart function finish
 
+// get items in cart function start
+function items(){
+  
+  // put db variable into function scope
+  // use getRealIpUser func to get user ip and put into variable
+  // put query string that get all rows from cart that matches ip_add into variable
+  // put query function that connects php to db into variable
+  // put array of rows from db into variable
+  // print number items found 
+  global $db;
+  
+  $ip_add = getRealIpUser();
+  
+  $get_items = "select * from cart where ip_add='$ip_add'";
+  
+  $run_items = mysqli_query($db,$get_items);
+  
+  $count_items = mysqli_num_rows($run_items);
+  
+  echo $count_items;
+  
+}
+// get items in cart function finish
 
+// get total price in cart function start
+function total_price(){
+  
+  // put db variable into function scope
+  // use getRealIpUser func to get user ip and put into variable
+  // set intial price total to 0
+  // put query string that get all rows from cart that matches ip_add into variable
+  // put query function that connects php to db into variable
+  // print total
+  global $db;
+  
+  $ip_add = getRealIpUser();
+  
+  $total = 0;
+  
+  $select_cart = "select * from cart where ip_add='$ip_add'";
+  
+  $run_cart = mysqli_query($db,$select_cart);
 
+  // loop throw array and find items in cart table in products table
+  // ..until mysqli_fetch_array hits end of results and returns null
+  while($record=mysqli_fetch_array($run_cart)){
+    // on each iteration put string held in p_id/qty into variable
+    // put query string that has current iterations product id into string
+    // send query to db
+    $pro_id = $record['p_id'];
+    
+    $pro_qty = $record['qty'];
+    
+    $get_price = "select * from products where product_id='$pro_id'";
+    
+    $run_price = mysqli_query($db,$get_price);
+    
+    // loop throw array and find price of products
+    // ..until mysqli_fetch_array hits end of results and returns null
+    while($row_price=mysqli_fetch_array($run_price)){
+      // on each iteration multiple current product price by quantity
+      // then add to total variable  
+      $sub_total = $row_price['product_price']*$pro_qty;
+      
+      $total += $sub_total;  
+    }  
+  }
+  
+  echo "$" . $total;
+}
 
+// get total price in cart function finish
 ?>
