@@ -17,7 +17,7 @@
     include __DIR__ . "/../includes/navbar.php";
     
   ?>
-
+  <!-- TODO: add function to detect if product is shoes or accessory in order to get proper sizes -->
   <!-- Details Begin -->
   <div id="content">
     <div class="container">
@@ -128,7 +128,11 @@
 
               <h1 class="text-center"><?php echo $pro_title; ?> </h1>
 
-              <form action="../index.php?add_cart=<?php echo $pro_id; ?>" class="form-horizontal" method="post">
+              <?php 
+                add_cart(); 
+              ?>
+
+              <form action="details.php?add_cart=<?php echo $product_id; ?>" class="form-horizontal" method="post">
 
                 <div class="form-group">
 

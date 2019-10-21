@@ -1,4 +1,6 @@
 <?php 
+// TODO: Refactor db scope from global to function argument
+
 // put db connection function that connects php to db into variable
 $db = mysqli_connect("localhost","ADMIN","admin","ecom_store");
 
