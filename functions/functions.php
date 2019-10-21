@@ -4,7 +4,8 @@ $db = mysqli_connect("localhost","ADMIN","admin","ecom_store");
 
 // get product function start
 function getPro(){
-  // put db variable into global scope
+
+  // put db variable into function scope
   // put query string that selects table from db and limits rows to first 9 into variable
   // put query function that connects php to db into variable
   // put db row into an array then into a variable
@@ -78,9 +79,9 @@ function getPro(){
 // get product function finish
 
 // get product categories function start 
-
 function getPCats(){
-  // put db variable into global scope
+
+  // put db variable into function scope
   // put query string that selects table from db into variable
   // put query function that connects php to db into variable
   // put db row into an array then into a variable
@@ -108,12 +109,10 @@ function getPCats(){
       </li>
     ";  
   }
-}
-  
+} 
 // get product categories function finish
 
 // get categories function start 
-
 function getCats(){
   // put db variable into global scope
   // put query string that selects table from db into variable
@@ -143,14 +142,13 @@ function getCats(){
       </li>
     ";   
   }
-}
-  
+} 
 // get categories function finish 
 
 // get products from a product category function start 
 function getpcatpro(){
   
-  global $db;
+  // put db variable into function scope
   // checks if p_cat is set 
   // puts cat id into variable
   // put query string that get all rows from product_categories that matches cat id into variable
@@ -160,6 +158,8 @@ function getpcatpro(){
   // put query string that get alls rows from product that matches product category id into variable
   // put query string that selects table from db into variable
   // put number of rows in table into variable
+  global $db;
+
   if(isset($_GET['p_cat'])){
       
     $p_cat_id = $_GET['p_cat'];
@@ -272,10 +272,9 @@ function getpcatpro(){
 // get products from a product category function finish
 
 // get category product function start 
-
 function getcatpro(){
 
-  // put db variable into global scope 
+  // put db variable into function scope
   // checks if cat is declared
   // if true puts cat id into a variable
   // put query string that get all rows from categories that matches cat id into variable
@@ -402,7 +401,6 @@ function getcatpro(){
 // get category product function finish
 
 // get ip from user/customer function start
-
 function getRealIpUser(){
   // check if for where user ip is and return ip address
   if(!empty($_SERVER['HTTP_X_REAL_IP'])) {
@@ -418,8 +416,53 @@ function getRealIpUser(){
     return $_SERVER['REMOTE_ADDR'];
   } 
 }
-
 // get ip from customer function finish
+
+// add product to cart function start
+function add_cart(){
+  
+  // put db variable into function scope
+  // checks if add_cart is set on url param
+  // use getRealIpUser func to get user ip and put into variable
+  // check post req for product quantity and size and put each into respective variable
+  // put query string that get all rows from product_categories that matches cat id into variable
+  // put query function that connects php to db into variable
+  // check if rows return from db query is greater than 0
+    // if true returns sends alert item has already been added and refresh window
+    // if false puts query string that adds item to db into variable..
+    //..then sends query to db and refreshs page
+  global $db;
+  
+  if(isset($_GET['add_cart'])){
+      
+    $ip_add = getRealIpUser();
+    
+    $p_id = $_GET['add_cart'];
+    
+    $product_qty = $_POST['product_qty'];
+    
+    $product_size = $_POST['product_size'];
+    
+    $check_product = "select * from cart where ip_add='$ip_add' AND p_id='$p_id'";
+    
+    $run_check = mysqli_query($db,$check_product);
+    
+    if(mysqli_num_rows($run_check)>0){
+        
+      echo "<script>alert('This product has already added in cart')</script>";
+      echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";    
+    }else{
+        
+      $query = "insert into cart (p_id,ip_add,qty,size) values ('$p_id','$ip_add','$product_qty','$product_size')";
+      
+      $run_query = mysqli_query($db,$query);
+      
+      echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";   
+    }   
+  } 
+}
+// add product to cart function finish
+
 
 
 
