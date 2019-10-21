@@ -401,4 +401,26 @@ function getcatpro(){
 }
 // get category product function finish
 
+// get ip from user/customer function start
+
+function getRealIpUser(){
+  // check if for where user ip is and return ip address
+  if(!empty($_SERVER['HTTP_X_REAL_IP'])) {
+    return $_SERVER['HTTP_X_REAL_IP'];
+
+  } elseif(!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    return $_SERVER['HTTP_CLIENT_IP'];
+
+  } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    return $_SERVER['HTTP_X_FORWARDED_FOR'];
+
+  } else{
+    return $_SERVER['REMOTE_ADDR'];
+  } 
+}
+
+// get ip from customer function finish
+
+
+
 ?>

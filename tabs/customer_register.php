@@ -30,7 +30,7 @@
           <a href="index.php">Home</a>
         </li>
         <li>
-          Contact Us
+          Register
         </li>
       </ul>
       <!-- Crumb Finish -->

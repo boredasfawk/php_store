@@ -63,7 +63,7 @@
 
         <i class="fa fa-shopping-cart"></i>
 
-        <span>CheckOut</span>
+        <span><?php items(); ?> Items In Your Cart</span>
 
       </a>
       <!-- Navbar-Content Fininsh -->

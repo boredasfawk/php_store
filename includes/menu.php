@@ -7,7 +7,7 @@
 
       <a href="#" class="btn btn-success btn-sm">Welcome</a>
 
-      <a href="../tabs/checkout.php">CheckOut</a>
+      <a href="../tabs/checkout.php"><?php items(); ?> Items In Your Cart | Total Price: <?php total_price(); ?> </a>
 
     </div>
     <!-- Welcome Finish -->
