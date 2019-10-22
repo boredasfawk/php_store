@@ -42,7 +42,23 @@
         <form action="cart.php" method="post" enctype="multipart/form-data">
 
           <h1>Shopping Cart</h1>
-          <p class="text-muted">You currently have 3 item(s) in your cart</p>
+
+          <?php 
+            // checks ip of current user in cart page thenputs results into variable
+            // query string that selects all rows from cart that..
+            // ...matches current users ip results arre put in variable    
+            // put quesry string to send query to db in variable
+            // put number of rows into variable       
+            $ip_add = getRealIpUser();
+            
+            $select_cart = "select * from cart where ip_add='$ip_add'";
+            
+            $run_cart = mysqli_query($con,$select_cart);
+            
+            $count = mysqli_num_rows($run_cart);
+                       
+          ?>
+          <p class="text-muted">You currently <?php echo $count; ?> item(s)in your cart</p>
 
           <div class="table-responsive">
 
